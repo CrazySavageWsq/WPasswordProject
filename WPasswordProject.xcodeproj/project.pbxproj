@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6921D22A9400D4F63D /* AppDelegate.m */; };
+		14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6C21D22A9400D4F63D /* ViewController.m */; };
+		14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6C6E21D22A9400D4F63D /* Main.storyboard */; };
+		14AE6C7221D22A9500D4F63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6C7121D22A9500D4F63D /* Assets.xcassets */; };
+		14AE6C7521D22A9500D4F63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6C7321D22A9500D4F63D /* LaunchScreen.storyboard */; };
+		14AE6C7821D22A9600D4F63D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C7721D22A9600D4F63D /* main.m */; };
+		14AE6C8221D22A9600D4F63D /* WPasswordProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C8121D22A9600D4F63D /* WPasswordProjectTests.m */; };
+		14AE6C8D21D22A9600D4F63D /* WPasswordProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C8C21D22A9600D4F63D /* WPasswordProjectUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14AE6C7E21D22A9600D4F63D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14AE6C5D21D22A9400D4F63D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14AE6C6421D22A9400D4F63D;
+			remoteInfo = WPasswordProject;
+		};
+		14AE6C8921D22A9600D4F63D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14AE6C5D21D22A9400D4F63D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14AE6C6421D22A9400D4F63D;
+			remoteInfo = WPasswordProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14AE6C6521D22A9400D4F63D /* WPasswordProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPasswordProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AE6C6821D22A9400D4F63D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14AE6C6921D22A9400D4F63D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14AE6C6B21D22A9400D4F63D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14AE6C6C21D22A9400D4F63D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14AE6C6F21D22A9400D4F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14AE6C7121D22A9500D4F63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14AE6C7421D22A9500D4F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14AE6C7621D22A9600D4F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AE6C7721D22A9600D4F63D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14AE6C7D21D22A9600D4F63D /* WPasswordProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPasswordProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AE6C8121D22A9600D4F63D /* WPasswordProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPasswordProjectTests.m; sourceTree = "<group>"; };
+		14AE6C8321D22A9600D4F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AE6C8821D22A9600D4F63D /* WPasswordProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPasswordProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AE6C8C21D22A9600D4F63D /* WPasswordProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPasswordProjectUITests.m; sourceTree = "<group>"; };
+		14AE6C8E21D22A9600D4F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14AE6C6221D22A9400D4F63D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AE6C7A21D22A9600D4F63D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AE6C8521D22A9600D4F63D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AE6C5C21D22A9400D4F63D = {
+			isa = PBXGroup;
+			children = (
+				14AE6C6721D22A9400D4F63D /* WPasswordProject */,
+				14AE6C8021D22A9600D4F63D /* WPasswordProjectTests */,
+				14AE6C8B21D22A9600D4F63D /* WPasswordProjectUITests */,
+				14AE6C6621D22A9400D4F63D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14AE6C6621D22A9400D4F63D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6C6521D22A9400D4F63D /* WPasswordProject.app */,
+				14AE6C7D21D22A9600D4F63D /* WPasswordProjectTests.xctest */,
+				14AE6C8821D22A9600D4F63D /* WPasswordProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14AE6C6721D22A9400D4F63D /* WPasswordProject */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6C6821D22A9400D4F63D /* AppDelegate.h */,
+				14AE6C6921D22A9400D4F63D /* AppDelegate.m */,
+				14AE6C6B21D22A9400D4F63D /* ViewController.h */,
+				14AE6C6C21D22A9400D4F63D /* ViewController.m */,
+				14AE6CAA21D22C1300D4F63D /* MainModule */,
+				14AE6CA921D22C0B00D4F63D /* ThirdLib */,
+				14AE6C9C21D22BFD00D4F63D /* MainModule */,
+				14AE6C6E21D22A9400D4F63D /* Main.storyboard */,
+				14AE6C7121D22A9500D4F63D /* Assets.xcassets */,
+				14AE6C7321D22A9500D4F63D /* LaunchScreen.storyboard */,
+				14AE6C7621D22A9600D4F63D /* Info.plist */,
+				14AE6C7721D22A9600D4F63D /* main.m */,
+			);
+			path = WPasswordProject;
+			sourceTree = "<group>";
+		};
+		14AE6C8021D22A9600D4F63D /* WPasswordProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6C8121D22A9600D4F63D /* WPasswordProjectTests.m */,
+				14AE6C8321D22A9600D4F63D /* Info.plist */,
+			);
+			path = WPasswordProjectTests;
+			sourceTree = "<group>";
+		};
+		14AE6C8B21D22A9600D4F63D /* WPasswordProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6C8C21D22A9600D4F63D /* WPasswordProjectUITests.m */,
+				14AE6C8E21D22A9600D4F63D /* Info.plist */,
+			);
+			path = WPasswordProjectUITests;
+			sourceTree = "<group>";
+		};
+		14AE6C9C21D22BFD00D4F63D /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6C9D21D22BFD00D4F63D /* Add */,
+				14AE6CA121D22BFD00D4F63D /* HomePage */,
+				14AE6CA521D22BFD00D4F63D /* PersonalCenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		14AE6C9D21D22BFD00D4F63D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6C9E21D22BFD00D4F63D /* controller */,
+				14AE6C9F21D22BFD00D4F63D /* model */,
+				14AE6CA021D22BFD00D4F63D /* view */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		14AE6C9E21D22BFD00D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6C9F21D22BFD00D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CA021D22BFD00D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CA121D22BFD00D4F63D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CA221D22BFD00D4F63D /* controller */,
+				14AE6CA321D22BFD00D4F63D /* model */,
+				14AE6CA421D22BFD00D4F63D /* view */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		14AE6CA221D22BFD00D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CA321D22BFD00D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CA421D22BFD00D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CA521D22BFD00D4F63D /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CA621D22BFD00D4F63D /* controller */,
+				14AE6CA721D22BFD00D4F63D /* model */,
+				14AE6CA821D22BFD00D4F63D /* view */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		14AE6CA621D22BFD00D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CA721D22BFD00D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CA821D22BFD00D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CA921D22C0B00D4F63D /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		14AE6CAA21D22C1300D4F63D /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CAB21D22C1300D4F63D /* Add */,
+				14AE6CAF21D22C1300D4F63D /* HomePage */,
+				14AE6CB321D22C1300D4F63D /* PersonalCenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		14AE6CAB21D22C1300D4F63D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CAC21D22C1300D4F63D /* controller */,
+				14AE6CAD21D22C1300D4F63D /* model */,
+				14AE6CAE21D22C1300D4F63D /* view */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		14AE6CAC21D22C1300D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CAD21D22C1300D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CAE21D22C1300D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CAF21D22C1300D4F63D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CB021D22C1300D4F63D /* controller */,
+				14AE6CB121D22C1300D4F63D /* model */,
+				14AE6CB221D22C1300D4F63D /* view */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		14AE6CB021D22C1300D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CB121D22C1300D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CB221D22C1300D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CB321D22C1300D4F63D /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CB421D22C1300D4F63D /* controller */,
+				14AE6CB521D22C1300D4F63D /* model */,
+				14AE6CB621D22C1300D4F63D /* view */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		14AE6CB421D22C1300D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CB521D22C1300D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CB621D22C1300D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14AE6C6421D22A9400D4F63D /* WPasswordProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AE6C9121D22A9600D4F63D /* Build configuration list for PBXNativeTarget "WPasswordProject" */;
+			buildPhases = (
+				14AE6C6121D22A9400D4F63D /* Sources */,
+				14AE6C6221D22A9400D4F63D /* Frameworks */,
+				14AE6C6321D22A9400D4F63D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPasswordProject;
+			productName = WPasswordProject;
+			productReference = 14AE6C6521D22A9400D4F63D /* WPasswordProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14AE6C7C21D22A9600D4F63D /* WPasswordProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AE6C9421D22A9600D4F63D /* Build configuration list for PBXNativeTarget "WPasswordProjectTests" */;
+			buildPhases = (
+				14AE6C7921D22A9600D4F63D /* Sources */,
+				14AE6C7A21D22A9600D4F63D /* Frameworks */,
+				14AE6C7B21D22A9600D4F63D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14AE6C7F21D22A9600D4F63D /* PBXTargetDependency */,
+			);
+			name = WPasswordProjectTests;
+			productName = WPasswordProjectTests;
+			productReference = 14AE6C7D21D22A9600D4F63D /* WPasswordProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14AE6C8721D22A9600D4F63D /* WPasswordProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AE6C9721D22A9600D4F63D /* Build configuration list for PBXNativeTarget "WPasswordProjectUITests" */;
+			buildPhases = (
+				14AE6C8421D22A9600D4F63D /* Sources */,
+				14AE6C8521D22A9600D4F63D /* Frameworks */,
+				14AE6C8621D22A9600D4F63D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14AE6C8A21D22A9600D4F63D /* PBXTargetDependency */,
+			);
+			name = WPasswordProjectUITests;
+			productName = WPasswordProjectUITests;
+			productReference = 14AE6C8821D22A9600D4F63D /* WPasswordProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14AE6C5D21D22A9400D4F63D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Crazy Wang";
+				TargetAttributes = {
+					14AE6C6421D22A9400D4F63D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					14AE6C7C21D22A9600D4F63D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 14AE6C6421D22A9400D4F63D;
+					};
+					14AE6C8721D22A9600D4F63D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 14AE6C6421D22A9400D4F63D;
+					};
+				};
+			};
+			buildConfigurationList = 14AE6C6021D22A9400D4F63D /* Build configuration list for PBXProject "WPasswordProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14AE6C5C21D22A9400D4F63D;
+			productRefGroup = 14AE6C6621D22A9400D4F63D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14AE6C6421D22A9400D4F63D /* WPasswordProject */,
+				14AE6C7C21D22A9600D4F63D /* WPasswordProjectTests */,
+				14AE6C8721D22A9600D4F63D /* WPasswordProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14AE6C6321D22A9400D4F63D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AE6C7521D22A9500D4F63D /* LaunchScreen.storyboard in Resources */,
+				14AE6C7221D22A9500D4F63D /* Assets.xcassets in Resources */,
+				14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AE6C7B21D22A9600D4F63D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AE6C8621D22A9600D4F63D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14AE6C6121D22A9400D4F63D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */,
+				14AE6C7821D22A9600D4F63D /* main.m in Sources */,
+				14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AE6C7921D22A9600D4F63D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AE6C8221D22A9600D4F63D /* WPasswordProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AE6C8421D22A9600D4F63D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AE6C8D21D22A9600D4F63D /* WPasswordProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14AE6C7F21D22A9600D4F63D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14AE6C6421D22A9400D4F63D /* WPasswordProject */;
+			targetProxy = 14AE6C7E21D22A9600D4F63D /* PBXContainerItemProxy */;
+		};
+		14AE6C8A21D22A9600D4F63D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14AE6C6421D22A9400D4F63D /* WPasswordProject */;
+			targetProxy = 14AE6C8921D22A9600D4F63D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14AE6C6E21D22A9400D4F63D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AE6C6F21D22A9400D4F63D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14AE6C7321D22A9500D4F63D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AE6C7421D22A9500D4F63D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14AE6C8F21D22A9600D4F63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14AE6C9021D22A9600D4F63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14AE6C9221D22A9600D4F63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPasswordProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14AE6C9321D22A9600D4F63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPasswordProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14AE6C9521D22A9600D4F63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPasswordProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPasswordProject.app/WPasswordProject";
+			};
+			name = Debug;
+		};
+		14AE6C9621D22A9600D4F63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPasswordProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPasswordProject.app/WPasswordProject";
+			};
+			name = Release;
+		};
+		14AE6C9821D22A9600D4F63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPasswordProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WPasswordProject;
+			};
+			name = Debug;
+		};
+		14AE6C9921D22A9600D4F63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPasswordProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WPasswordProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14AE6C6021D22A9400D4F63D /* Build configuration list for PBXProject "WPasswordProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AE6C8F21D22A9600D4F63D /* Debug */,
+				14AE6C9021D22A9600D4F63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AE6C9121D22A9600D4F63D /* Build configuration list for PBXNativeTarget "WPasswordProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AE6C9221D22A9600D4F63D /* Debug */,
+				14AE6C9321D22A9600D4F63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AE6C9421D22A9600D4F63D /* Build configuration list for PBXNativeTarget "WPasswordProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AE6C9521D22A9600D4F63D /* Debug */,
+				14AE6C9621D22A9600D4F63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AE6C9721D22A9600D4F63D /* Build configuration list for PBXNativeTarget "WPasswordProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AE6C9821D22A9600D4F63D /* Debug */,
+				14AE6C9921D22A9600D4F63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14AE6C5D21D22A9400D4F63D /* Project object */;
+}

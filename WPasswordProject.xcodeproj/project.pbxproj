@@ -15,6 +15,18 @@
 		14AE6C7821D22A9600D4F63D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C7721D22A9600D4F63D /* main.m */; };
 		14AE6C8221D22A9600D4F63D /* WPasswordProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C8121D22A9600D4F63D /* WPasswordProjectTests.m */; };
 		14AE6C8D21D22A9600D4F63D /* WPasswordProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C8C21D22A9600D4F63D /* WPasswordProjectUITests.m */; };
+		14AE6CD221D46ABD00D4F63D /* NSArray+NullJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CBD21D46ABC00D4F63D /* NSArray+NullJudge.m */; };
+		14AE6CD321D46ABD00D4F63D /* NSString+ToolString.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CBF21D46ABC00D4F63D /* NSString+ToolString.m */; };
+		14AE6CD421D46ABD00D4F63D /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CC021D46ABC00D4F63D /* NSDictionary+Log.m */; };
+		14AE6CD521D46ABD00D4F63D /* UILabel+YBAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CC221D46ABC00D4F63D /* UILabel+YBAttributeTextTapAction.m */; };
+		14AE6CD821D46ABD00D4F63D /* UITextField+cursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CC621D46ABC00D4F63D /* UITextField+cursor.m */; };
+		14AE6CD921D46ABD00D4F63D /* UIButton+UrlImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CCB21D46ABD00D4F63D /* UIButton+UrlImageView.m */; };
+		14AE6CDA21D46ABD00D4F63D /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CCD21D46ABD00D4F63D /* UICountingLabel.m */; };
+		14AE6CDB21D46ABD00D4F63D /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CCF21D46ABD00D4F63D /* NSArray+Log.m */; };
+		14AE6CDC21D46ABD00D4F63D /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CD021D46ABD00D4F63D /* UIImage+FixOrientation.m */; };
+		14AE6CDD21D46ABD00D4F63D /* UIView+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CD121D46ABD00D4F63D /* UIView+Action.m */; };
+		14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CE221D46CDE00D4F63D /* UIView+CornerRadius.m */; };
+		14AE6CE621D46F5300D4F63D /* NSDictionary+NullJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CE521D46F5300D4F63D /* NSDictionary+NullJudge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,30 @@
 		14AE6C8821D22A9600D4F63D /* WPasswordProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPasswordProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE6C8C21D22A9600D4F63D /* WPasswordProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPasswordProjectUITests.m; sourceTree = "<group>"; };
 		14AE6C8E21D22A9600D4F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AE6CBA21D46ABC00D4F63D /* UITextField+cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+cursor.h"; sourceTree = "<group>"; };
+		14AE6CBC21D46ABC00D4F63D /* UILabel+YBAttributeTextTapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YBAttributeTextTapAction.h"; sourceTree = "<group>"; };
+		14AE6CBD21D46ABC00D4F63D /* NSArray+NullJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NullJudge.m"; sourceTree = "<group>"; };
+		14AE6CBF21D46ABC00D4F63D /* NSString+ToolString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToolString.m"; sourceTree = "<group>"; };
+		14AE6CC021D46ABC00D4F63D /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		14AE6CC121D46ABC00D4F63D /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
+		14AE6CC221D46ABC00D4F63D /* UILabel+YBAttributeTextTapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YBAttributeTextTapAction.m"; sourceTree = "<group>"; };
+		14AE6CC521D46ABC00D4F63D /* NSArray+NullJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NullJudge.h"; sourceTree = "<group>"; };
+		14AE6CC621D46ABC00D4F63D /* UITextField+cursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+cursor.m"; sourceTree = "<group>"; };
+		14AE6CC721D46ABC00D4F63D /* UIButton+UrlImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+UrlImageView.h"; sourceTree = "<group>"; };
+		14AE6CC821D46ABC00D4F63D /* UIView+Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Action.h"; sourceTree = "<group>"; };
+		14AE6CC921D46ABD00D4F63D /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		14AE6CCA21D46ABD00D4F63D /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		14AE6CCB21D46ABD00D4F63D /* UIButton+UrlImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UrlImageView.m"; sourceTree = "<group>"; };
+		14AE6CCC21D46ABD00D4F63D /* NSString+ToolString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ToolString.h"; sourceTree = "<group>"; };
+		14AE6CCD21D46ABD00D4F63D /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		14AE6CCE21D46ABD00D4F63D /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		14AE6CCF21D46ABD00D4F63D /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		14AE6CD021D46ABD00D4F63D /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		14AE6CD121D46ABD00D4F63D /* UIView+Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Action.m"; sourceTree = "<group>"; };
+		14AE6CE121D46CDE00D4F63D /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
+		14AE6CE221D46CDE00D4F63D /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
+		14AE6CE421D46F5300D4F63D /* NSDictionary+NullJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NullJudge.h"; sourceTree = "<group>"; };
+		14AE6CE521D46F5300D4F63D /* NSDictionary+NullJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NullJudge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +141,7 @@
 				14AE6C6921D22A9400D4F63D /* AppDelegate.m */,
 				14AE6C6B21D22A9400D4F63D /* ViewController.h */,
 				14AE6C6C21D22A9400D4F63D /* ViewController.m */,
-				14AE6CAA21D22C1300D4F63D /* MainModule */,
+				14AE6CB721D46A1100D4F63D /* Commen */,
 				14AE6CA921D22C0B00D4F63D /* ThirdLib */,
 				14AE6C9C21D22BFD00D4F63D /* MainModule */,
 				14AE6C6E21D22A9400D4F63D /* Main.storyboard */,
@@ -245,107 +281,51 @@
 			path = ThirdLib;
 			sourceTree = "<group>";
 		};
-		14AE6CAA21D22C1300D4F63D /* MainModule */ = {
+		14AE6CB721D46A1100D4F63D /* Commen */ = {
 			isa = PBXGroup;
 			children = (
-				14AE6CAB21D22C1300D4F63D /* Add */,
-				14AE6CAF21D22C1300D4F63D /* HomePage */,
-				14AE6CB321D22C1300D4F63D /* PersonalCenter */,
+				14AE6CB821D46A4B00D4F63D /* category */,
+				14AE6CB921D46A4B00D4F63D /* tool */,
 			);
-			path = MainModule;
+			path = Commen;
 			sourceTree = "<group>";
 		};
-		14AE6CAB21D22C1300D4F63D /* Add */ = {
+		14AE6CB821D46A4B00D4F63D /* category */ = {
 			isa = PBXGroup;
 			children = (
-				14AE6CAC21D22C1300D4F63D /* controller */,
-				14AE6CAD21D22C1300D4F63D /* model */,
-				14AE6CAE21D22C1300D4F63D /* view */,
+				14AE6CC921D46ABD00D4F63D /* NSArray+Log.h */,
+				14AE6CCF21D46ABD00D4F63D /* NSArray+Log.m */,
+				14AE6CC521D46ABC00D4F63D /* NSArray+NullJudge.h */,
+				14AE6CBD21D46ABC00D4F63D /* NSArray+NullJudge.m */,
+				14AE6CC121D46ABC00D4F63D /* NSDictionary+Log.h */,
+				14AE6CC021D46ABC00D4F63D /* NSDictionary+Log.m */,
+				14AE6CE421D46F5300D4F63D /* NSDictionary+NullJudge.h */,
+				14AE6CE521D46F5300D4F63D /* NSDictionary+NullJudge.m */,
+				14AE6CCC21D46ABD00D4F63D /* NSString+ToolString.h */,
+				14AE6CBF21D46ABC00D4F63D /* NSString+ToolString.m */,
+				14AE6CC721D46ABC00D4F63D /* UIButton+UrlImageView.h */,
+				14AE6CCB21D46ABD00D4F63D /* UIButton+UrlImageView.m */,
+				14AE6CCA21D46ABD00D4F63D /* UICountingLabel.h */,
+				14AE6CCD21D46ABD00D4F63D /* UICountingLabel.m */,
+				14AE6CCE21D46ABD00D4F63D /* UIImage+FixOrientation.h */,
+				14AE6CD021D46ABD00D4F63D /* UIImage+FixOrientation.m */,
+				14AE6CBC21D46ABC00D4F63D /* UILabel+YBAttributeTextTapAction.h */,
+				14AE6CC221D46ABC00D4F63D /* UILabel+YBAttributeTextTapAction.m */,
+				14AE6CBA21D46ABC00D4F63D /* UITextField+cursor.h */,
+				14AE6CC621D46ABC00D4F63D /* UITextField+cursor.m */,
+				14AE6CC821D46ABC00D4F63D /* UIView+Action.h */,
+				14AE6CD121D46ABD00D4F63D /* UIView+Action.m */,
+				14AE6CE121D46CDE00D4F63D /* UIView+CornerRadius.h */,
+				14AE6CE221D46CDE00D4F63D /* UIView+CornerRadius.m */,
 			);
-			path = Add;
+			path = category;
 			sourceTree = "<group>";
 		};
-		14AE6CAC21D22C1300D4F63D /* controller */ = {
+		14AE6CB921D46A4B00D4F63D /* tool */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		14AE6CAD21D22C1300D4F63D /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		14AE6CAE21D22C1300D4F63D /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		14AE6CAF21D22C1300D4F63D /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				14AE6CB021D22C1300D4F63D /* controller */,
-				14AE6CB121D22C1300D4F63D /* model */,
-				14AE6CB221D22C1300D4F63D /* view */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		14AE6CB021D22C1300D4F63D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		14AE6CB121D22C1300D4F63D /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		14AE6CB221D22C1300D4F63D /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		14AE6CB321D22C1300D4F63D /* PersonalCenter */ = {
-			isa = PBXGroup;
-			children = (
-				14AE6CB421D22C1300D4F63D /* controller */,
-				14AE6CB521D22C1300D4F63D /* model */,
-				14AE6CB621D22C1300D4F63D /* view */,
-			);
-			path = PersonalCenter;
-			sourceTree = "<group>";
-		};
-		14AE6CB421D22C1300D4F63D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		14AE6CB521D22C1300D4F63D /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		14AE6CB621D22C1300D4F63D /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
+			path = tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,9 +458,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AE6CD921D46ABD00D4F63D /* UIButton+UrlImageView.m in Sources */,
 				14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */,
+				14AE6CD421D46ABD00D4F63D /* NSDictionary+Log.m in Sources */,
+				14AE6CD321D46ABD00D4F63D /* NSString+ToolString.m in Sources */,
 				14AE6C7821D22A9600D4F63D /* main.m in Sources */,
+				14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */,
+				14AE6CDA21D46ABD00D4F63D /* UICountingLabel.m in Sources */,
+				14AE6CD521D46ABD00D4F63D /* UILabel+YBAttributeTextTapAction.m in Sources */,
+				14AE6CDB21D46ABD00D4F63D /* NSArray+Log.m in Sources */,
 				14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */,
+				14AE6CDC21D46ABD00D4F63D /* UIImage+FixOrientation.m in Sources */,
+				14AE6CD821D46ABD00D4F63D /* UITextField+cursor.m in Sources */,
+				14AE6CD221D46ABD00D4F63D /* NSArray+NullJudge.m in Sources */,
+				14AE6CDD21D46ABD00D4F63D /* UIView+Action.m in Sources */,
+				14AE6CE621D46F5300D4F63D /* NSDictionary+NullJudge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +643,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,7 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

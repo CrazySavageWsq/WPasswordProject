@@ -27,8 +27,13 @@
 		14AE6CDD21D46ABD00D4F63D /* UIView+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CD121D46ABD00D4F63D /* UIView+Action.m */; };
 		14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CE221D46CDE00D4F63D /* UIView+CornerRadius.m */; };
 		14AE6CE621D46F5300D4F63D /* NSDictionary+NullJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CE521D46F5300D4F63D /* NSDictionary+NullJudge.m */; };
-		14AE6CEA21D4824E00D4F63D /* WSQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CE921D4824E00D4F63D /* WSQTabBarController.m */; };
-		14AE6CED21D4827600D4F63D /* WNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CEC21D4827600D4F63D /* WNavigationController.m */; };
+		14AE6CFF21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CFC21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m */; };
+		14AE6D0021D5D39D00D4F63D /* BaseViewContrroler.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6CFE21D5D39D00D4F63D /* BaseViewContrroler.m */; };
+		14AE6D1321D5D46500D4F63D /* icon_back_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6D0A21D5D46500D4F63D /* icon_back_black.png */; };
+		14AE6D1421D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D0C21D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m */; };
+		14AE6D1521D5D46500D4F63D /* WsqCustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D0E21D5D46500D4F63D /* WsqCustomBarItem.m */; };
+		14AE6D1621D5D46500D4F63D /* WsqCustomNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1021D5D46500D4F63D /* WsqCustomNavigationVC.m */; };
+		14AE6D1721D5D46500D4F63D /* WSQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1221D5D46500D4F63D /* WSQTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,10 +94,19 @@
 		14AE6CE221D46CDE00D4F63D /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		14AE6CE421D46F5300D4F63D /* NSDictionary+NullJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NullJudge.h"; sourceTree = "<group>"; };
 		14AE6CE521D46F5300D4F63D /* NSDictionary+NullJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NullJudge.m"; sourceTree = "<group>"; };
-		14AE6CE821D4824E00D4F63D /* WSQTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSQTabBarController.h; sourceTree = "<group>"; };
-		14AE6CE921D4824E00D4F63D /* WSQTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSQTabBarController.m; sourceTree = "<group>"; };
-		14AE6CEB21D4827600D4F63D /* WNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNavigationController.h; sourceTree = "<group>"; };
-		14AE6CEC21D4827600D4F63D /* WNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNavigationController.m; sourceTree = "<group>"; };
+		14AE6CFB21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseViewContrroler+PhotoPicker.h"; sourceTree = "<group>"; };
+		14AE6CFC21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseViewContrroler+PhotoPicker.m"; sourceTree = "<group>"; };
+		14AE6CFD21D5D39D00D4F63D /* BaseViewContrroler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewContrroler.h; sourceTree = "<group>"; };
+		14AE6CFE21D5D39D00D4F63D /* BaseViewContrroler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewContrroler.m; sourceTree = "<group>"; };
+		14AE6D0A21D5D46500D4F63D /* icon_back_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_black.png; sourceTree = "<group>"; };
+		14AE6D0B21D5D46500D4F63D /* UINavigationItem+WsqCustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+WsqCustomItem.h"; sourceTree = "<group>"; };
+		14AE6D0C21D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+WsqCustomItem.m"; sourceTree = "<group>"; };
+		14AE6D0D21D5D46500D4F63D /* WsqCustomBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WsqCustomBarItem.h; sourceTree = "<group>"; };
+		14AE6D0E21D5D46500D4F63D /* WsqCustomBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WsqCustomBarItem.m; sourceTree = "<group>"; };
+		14AE6D0F21D5D46500D4F63D /* WsqCustomNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WsqCustomNavigationVC.h; sourceTree = "<group>"; };
+		14AE6D1021D5D46500D4F63D /* WsqCustomNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WsqCustomNavigationVC.m; sourceTree = "<group>"; };
+		14AE6D1121D5D46500D4F63D /* WSQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSQTabBarController.h; sourceTree = "<group>"; };
+		14AE6D1221D5D46500D4F63D /* WSQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSQTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +161,9 @@
 				14AE6C6921D22A9400D4F63D /* AppDelegate.m */,
 				14AE6C6B21D22A9400D4F63D /* ViewController.h */,
 				14AE6C6C21D22A9400D4F63D /* ViewController.m */,
-				14AE6CE721D4821800D4F63D /* TabAndNavBar */,
+				14AE6CFA21D5D39D00D4F63D /* BaseController */,
 				14AE6CB721D46A1100D4F63D /* Commen */,
+				14AE6D0921D5D46500D4F63D /* TabAndNavBar */,
 				14AE6CA921D22C0B00D4F63D /* ThirdLib */,
 				14AE6C9C21D22BFD00D4F63D /* MainModule */,
 				14AE6C6E21D22A9400D4F63D /* Main.storyboard */,
@@ -181,104 +196,11 @@
 		14AE6C9C21D22BFD00D4F63D /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				14AE6C9D21D22BFD00D4F63D /* Add */,
-				14AE6CA121D22BFD00D4F63D /* HomePage */,
-				14AE6CA521D22BFD00D4F63D /* PersonalCenter */,
+				14AE6CF621D5BF6800D4F63D /* Add */,
+				14AE6CF221D5BF6800D4F63D /* HomePage */,
+				14AE6CEE21D5BF6800D4F63D /* PersonalCenter */,
 			);
 			path = MainModule;
-			sourceTree = "<group>";
-		};
-		14AE6C9D21D22BFD00D4F63D /* Add */ = {
-			isa = PBXGroup;
-			children = (
-				14AE6C9E21D22BFD00D4F63D /* controller */,
-				14AE6C9F21D22BFD00D4F63D /* model */,
-				14AE6CA021D22BFD00D4F63D /* view */,
-			);
-			path = Add;
-			sourceTree = "<group>";
-		};
-		14AE6C9E21D22BFD00D4F63D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		14AE6C9F21D22BFD00D4F63D /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		14AE6CA021D22BFD00D4F63D /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		14AE6CA121D22BFD00D4F63D /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				14AE6CA221D22BFD00D4F63D /* controller */,
-				14AE6CA321D22BFD00D4F63D /* model */,
-				14AE6CA421D22BFD00D4F63D /* view */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		14AE6CA221D22BFD00D4F63D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		14AE6CA321D22BFD00D4F63D /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		14AE6CA421D22BFD00D4F63D /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		14AE6CA521D22BFD00D4F63D /* PersonalCenter */ = {
-			isa = PBXGroup;
-			children = (
-				14AE6CA621D22BFD00D4F63D /* controller */,
-				14AE6CA721D22BFD00D4F63D /* model */,
-				14AE6CA821D22BFD00D4F63D /* view */,
-			);
-			path = PersonalCenter;
-			sourceTree = "<group>";
-		};
-		14AE6CA621D22BFD00D4F63D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		14AE6CA721D22BFD00D4F63D /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		14AE6CA821D22BFD00D4F63D /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		14AE6CA921D22C0B00D4F63D /* ThirdLib */ = {
@@ -335,13 +257,122 @@
 			path = tool;
 			sourceTree = "<group>";
 		};
-		14AE6CE721D4821800D4F63D /* TabAndNavBar */ = {
+		14AE6CEE21D5BF6800D4F63D /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
-				14AE6CE821D4824E00D4F63D /* WSQTabBarController.h */,
-				14AE6CE921D4824E00D4F63D /* WSQTabBarController.m */,
-				14AE6CEB21D4827600D4F63D /* WNavigationController.h */,
-				14AE6CEC21D4827600D4F63D /* WNavigationController.m */,
+				14AE6CEF21D5BF6800D4F63D /* controller */,
+				14AE6CF021D5BF6800D4F63D /* model */,
+				14AE6CF121D5BF6800D4F63D /* view */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		14AE6CEF21D5BF6800D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CF021D5BF6800D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CF121D5BF6800D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CF221D5BF6800D4F63D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CF321D5BF6800D4F63D /* controller */,
+				14AE6CF421D5BF6800D4F63D /* model */,
+				14AE6CF521D5BF6800D4F63D /* view */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		14AE6CF321D5BF6800D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CF421D5BF6800D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CF521D5BF6800D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CF621D5BF6800D4F63D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CF721D5BF6800D4F63D /* controller */,
+				14AE6CF821D5BF6800D4F63D /* model */,
+				14AE6CF921D5BF6800D4F63D /* view */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		14AE6CF721D5BF6800D4F63D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14AE6CF821D5BF6800D4F63D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14AE6CF921D5BF6800D4F63D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14AE6CFA21D5D39D00D4F63D /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6CFB21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.h */,
+				14AE6CFC21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m */,
+				14AE6CFD21D5D39D00D4F63D /* BaseViewContrroler.h */,
+				14AE6CFE21D5D39D00D4F63D /* BaseViewContrroler.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		14AE6D0921D5D46500D4F63D /* TabAndNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				14AE6D0A21D5D46500D4F63D /* icon_back_black.png */,
+				14AE6D0B21D5D46500D4F63D /* UINavigationItem+WsqCustomItem.h */,
+				14AE6D0C21D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m */,
+				14AE6D0D21D5D46500D4F63D /* WsqCustomBarItem.h */,
+				14AE6D0E21D5D46500D4F63D /* WsqCustomBarItem.m */,
+				14AE6D0F21D5D46500D4F63D /* WsqCustomNavigationVC.h */,
+				14AE6D1021D5D46500D4F63D /* WsqCustomNavigationVC.m */,
+				14AE6D1121D5D46500D4F63D /* WSQTabBarController.h */,
+				14AE6D1221D5D46500D4F63D /* WSQTabBarController.m */,
 			);
 			path = TabAndNavBar;
 			sourceTree = "<group>";
@@ -452,6 +483,7 @@
 				14AE6C7521D22A9500D4F63D /* LaunchScreen.storyboard in Resources */,
 				14AE6C7221D22A9500D4F63D /* Assets.xcassets in Resources */,
 				14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */,
+				14AE6D1321D5D46500D4F63D /* icon_back_black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,19 +508,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14AE6CED21D4827600D4F63D /* WNavigationController.m in Sources */,
 				14AE6CD921D46ABD00D4F63D /* UIButton+UrlImageView.m in Sources */,
+				14AE6D1621D5D46500D4F63D /* WsqCustomNavigationVC.m in Sources */,
+				14AE6D0021D5D39D00D4F63D /* BaseViewContrroler.m in Sources */,
+				14AE6D1421D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m in Sources */,
 				14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */,
+				14AE6D1521D5D46500D4F63D /* WsqCustomBarItem.m in Sources */,
 				14AE6CD421D46ABD00D4F63D /* NSDictionary+Log.m in Sources */,
+				14AE6CFF21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m in Sources */,
 				14AE6CD321D46ABD00D4F63D /* NSString+ToolString.m in Sources */,
 				14AE6C7821D22A9600D4F63D /* main.m in Sources */,
 				14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */,
 				14AE6CDA21D46ABD00D4F63D /* UICountingLabel.m in Sources */,
 				14AE6CD521D46ABD00D4F63D /* UILabel+YBAttributeTextTapAction.m in Sources */,
+				14AE6D1721D5D46500D4F63D /* WSQTabBarController.m in Sources */,
 				14AE6CDB21D46ABD00D4F63D /* NSArray+Log.m in Sources */,
 				14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */,
 				14AE6CDC21D46ABD00D4F63D /* UIImage+FixOrientation.m in Sources */,
-				14AE6CEA21D4824E00D4F63D /* WSQTabBarController.m in Sources */,
 				14AE6CD821D46ABD00D4F63D /* UITextField+cursor.m in Sources */,
 				14AE6CD221D46ABD00D4F63D /* NSArray+NullJudge.m in Sources */,
 				14AE6CDD21D46ABD00D4F63D /* UIView+Action.m in Sources */,
@@ -663,7 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

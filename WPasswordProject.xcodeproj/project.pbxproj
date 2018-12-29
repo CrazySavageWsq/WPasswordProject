@@ -34,6 +34,9 @@
 		14AE6D1521D5D46500D4F63D /* WsqCustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D0E21D5D46500D4F63D /* WsqCustomBarItem.m */; };
 		14AE6D1621D5D46500D4F63D /* WsqCustomNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1021D5D46500D4F63D /* WsqCustomNavigationVC.m */; };
 		14AE6D1721D5D46500D4F63D /* WSQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1221D5D46500D4F63D /* WSQTabBarController.m */; };
+		14AE6D1A21D72C1600D4F63D /* AddViewContrroler.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1921D72C1600D4F63D /* AddViewContrroler.m */; };
+		14AE6D1D21D72C2200D4F63D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1C21D72C2200D4F63D /* HomeViewController.m */; };
+		14AE6D2021D72C3A00D4F63D /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6D1F21D72C3A00D4F63D /* PersonalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,13 @@
 		14AE6D1021D5D46500D4F63D /* WsqCustomNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WsqCustomNavigationVC.m; sourceTree = "<group>"; };
 		14AE6D1121D5D46500D4F63D /* WSQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSQTabBarController.h; sourceTree = "<group>"; };
 		14AE6D1221D5D46500D4F63D /* WSQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSQTabBarController.m; sourceTree = "<group>"; };
+		14AE6D1821D72C1600D4F63D /* AddViewContrroler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewContrroler.h; sourceTree = "<group>"; };
+		14AE6D1921D72C1600D4F63D /* AddViewContrroler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewContrroler.m; sourceTree = "<group>"; };
+		14AE6D1B21D72C2200D4F63D /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		14AE6D1C21D72C2200D4F63D /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		14AE6D1E21D72C3A00D4F63D /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		14AE6D1F21D72C3A00D4F63D /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		14AE6D2121D750D400D4F63D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +181,7 @@
 				14AE6C7321D22A9500D4F63D /* LaunchScreen.storyboard */,
 				14AE6C7621D22A9600D4F63D /* Info.plist */,
 				14AE6C7721D22A9600D4F63D /* main.m */,
+				14AE6D2121D750D400D4F63D /* PrefixHeader.pch */,
 			);
 			path = WPasswordProject;
 			sourceTree = "<group>";
@@ -270,6 +281,8 @@
 		14AE6CEF21D5BF6800D4F63D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				14AE6D1E21D72C3A00D4F63D /* PersonalViewController.h */,
+				14AE6D1F21D72C3A00D4F63D /* PersonalViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -301,6 +314,8 @@
 		14AE6CF321D5BF6800D4F63D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				14AE6D1B21D72C2200D4F63D /* HomeViewController.h */,
+				14AE6D1C21D72C2200D4F63D /* HomeViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -332,6 +347,8 @@
 		14AE6CF721D5BF6800D4F63D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				14AE6D1821D72C1600D4F63D /* AddViewContrroler.h */,
+				14AE6D1921D72C1600D4F63D /* AddViewContrroler.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -512,10 +529,13 @@
 				14AE6D1621D5D46500D4F63D /* WsqCustomNavigationVC.m in Sources */,
 				14AE6D0021D5D39D00D4F63D /* BaseViewContrroler.m in Sources */,
 				14AE6D1421D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m in Sources */,
+				14AE6D1A21D72C1600D4F63D /* AddViewContrroler.m in Sources */,
 				14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */,
+				14AE6D2021D72C3A00D4F63D /* PersonalViewController.m in Sources */,
 				14AE6D1521D5D46500D4F63D /* WsqCustomBarItem.m in Sources */,
 				14AE6CD421D46ABD00D4F63D /* NSDictionary+Log.m in Sources */,
 				14AE6CFF21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m in Sources */,
+				14AE6D1D21D72C2200D4F63D /* HomeViewController.m in Sources */,
 				14AE6CD321D46ABD00D4F63D /* NSString+ToolString.m in Sources */,
 				14AE6C7821D22A9600D4F63D /* main.m in Sources */,
 				14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */,
@@ -698,6 +718,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WPasswordProject/PrefixHeader.pch";
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -715,6 +737,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WPasswordProject/PrefixHeader.pch";
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

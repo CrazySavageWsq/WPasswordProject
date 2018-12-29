@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  WPasswordProject
+//
+//  Created by Crazy Wang on 2018/12/29.
+//  Copyright © 2018年 Crazy Wang. All rights reserved.
+//
+
+
+#define APPDELEGATE ((AppDelegate*)([UIApplication sharedApplication].delegate))
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define NAV_HEIGHT (HEIGHT==812?88:64)
+#define TABBAR_HEIGHT (HEIGHT==812?83:49)
+
+#define USERS_LOCATION_MANAGER [getLocationManager manager]
+#define SYSTEM_VERSION [[UIDevice currentDevice].systemVersion floatValue]
+#define WidthAndHeightScale(a,b,c) a*b/c
+#define ADDSUB(x) [self.view addSubview:x]
+#define NEW_B_EQUAL(oldA,oldB,newA) (((newA)*(oldB))/(oldA))    // oldA/oldB=newA/newB  算其中一个
+#define NEW_WIDTH(oldW) NEW_B_EQUAL(375, oldW, WIDTH) //以6的屏幕宽度，适配宽度
+#define RGB(x,y,z) [UIColor colorWithRed:x/255.0f green:y/255.0f blue:z/255.0f alpha:1.0f]
+#define RGB_gray(x) [UIColor colorWithRed:x/255.0f green:x/255.0f blue:x/255.0f alpha:1.0f]
+#define RGBP(x,y,z,p) [UIColor colorWithRed:x/255.0f green:y/255.0f blue:z/255.0f alpha:p]
+#define UIColorFromRGBHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define ALERTSHOW(x) [SJKAlertView showWithMessage:(x)]
+#define ALERTSHOW_IN_CENTER(x) [SJKAlertView showWithMessageInCenter:(x)]
+#define POPVIEW [self.navigationController popViewControllerAnimated:YES]
+#define PUSHVIEW(x) [self.navigationController pushViewController:x animated:YES]
+#pragma mark ============== color ==============
+#define color_main_normal RGB(46,197,204)  //主要颜色 #FF4C4C 100%
+
+#define color_main_error_del RGB(212,52,47) // 错误色删除色#D4342F 100%
+
+#define color_background RGB_gray(244)  //页面背景色
+
+#define color_line RGB_gray(232)  //分割线
+
+#define color_bord RGB_gray(217)  //边框颜色
+
+#define color_text_deep_333 RGB_gray(51) //text颜色 #333333
+
+#define color_text_middle_666 RGB_gray(102) //text颜色 #666666
+
+#define color_text_light_999 RGB_gray(153) //text颜色 #999999
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif

@@ -18,4 +18,6 @@
 /** 人为的底部导航栏 */
 @property (nonatomic, strong) UIImageView * bagImageView;
 
+
+
 @end

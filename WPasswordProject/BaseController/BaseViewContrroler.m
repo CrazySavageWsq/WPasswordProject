@@ -48,7 +48,7 @@
 - (void)viewDidLoad {
   
     self.navigationController.navigationBar.translucent = NO;
-  
+
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];//UIColorFromRGB(0X2e7ff9);
 
     //修改导航条背景色（图片）
@@ -83,6 +83,10 @@
     }
     for (UIView *subview in view.subviews) {
         UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        imageView.layer.shadowColor = RGB_gray(178).CGColor;
+        imageView.layer.shadowOffset = CGSizeMake(0, 0);
+        imageView.layer.shadowOpacity = 0.3f;
+        imageView.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.95f];
         if (imageView) {
             return imageView;
         }
@@ -164,9 +168,9 @@
 - (void)setNavContentMenuTitle:(NSString*)title{
   
     if (_navagationTitleColor !=nil) {
-       [self.navigationItem itemWithTitle:title andTitleColor:_navagationTitleColor andTitleUIFontSize:[UIFont systemFontOfSize:21] andItemType:center];
+       [self.navigationItem itemWithTitle:title andTitleColor:_navagationTitleColor andTitleUIFontSize:[UIFont systemFontOfSize:18] andItemType:center];
     }else{
-        [self.navigationItem itemWithTitle:title andTitleColor:[UIColor whiteColor] andTitleUIFontSize:[UIFont systemFontOfSize:21] andItemType:center];
+        [self.navigationItem itemWithTitle:title andTitleColor:[UIColor blackColor] andTitleUIFontSize:[UIFont systemFontOfSize:18] andItemType:center];
     }
     
     

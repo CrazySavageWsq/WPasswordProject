@@ -98,7 +98,7 @@ typedef void(^RequestCompletionBlock)(BOOL isSuccess, NSDictionary *responseMode
 
 
 //上传图片  ser 接口名  infos 参数 serialNumber上传图片的标识（上传多张图片时用）
-- (void)requestWithServe:(NSString *)ser andInfos:(NSDictionary *)infos imageData:(NSData *)imageData image:(UIImage *)image completion:(RequestCompletionBlock)block;
+//- (void)requestWithServe:(NSString *)ser andInfos:(NSDictionary *)infos imageData:(NSData *)imageData image:(UIImage *)image completion:(RequestCompletionBlock)block;
 
 //
 //+ (void)requestSucc:(NSString *)ser andResults:(NSDictionary *)results;

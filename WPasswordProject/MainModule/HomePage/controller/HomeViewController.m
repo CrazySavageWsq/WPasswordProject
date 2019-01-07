@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "SetecPasswordVC.h"//选择解锁
+
 
 @interface HomeViewController ()
 
@@ -19,6 +21,8 @@
     [super viewDidLoad];
     [self setNavContentMenuTitle:@"首页"];
       navBarHairlineImageView =nil;
+    
+    [self showUnlockView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,14 +30,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ 弹出解锁页面
+ */
+-(void)showUnlockView{
+    
+    [self presentViewController:[SetecPasswordVC new] animated:YES completion:^{
+        
+    }];
+    
 }
-*/
+
+
 
 @end

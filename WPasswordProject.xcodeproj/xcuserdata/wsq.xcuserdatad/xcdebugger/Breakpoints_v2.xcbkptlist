@@ -13,5 +13,68 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WPasswordProject/Commen/setPassword/GestureLock/ZLGestureLockViewController.m"
+            timestampString = "568545729.561967"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "-createGesturesPassword:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZLGestureLockViewController createGesturesPassword:]"
+                  moduleName = "WPasswordProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wsq/Desktop/WSQ/WPasswordProject/WPasswordProject/Commen/setPassword/GestureLock/ZLGestureLockViewController.m"
+                  timestampString = "568545729.607679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "889">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__54-[ZLGestureLockViewController createGesturesPassword:]_block_invoke"
+                  moduleName = "WPasswordProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wsq/Desktop/WSQ/WPasswordProject/WPasswordProject/Commen/setPassword/GestureLock/ZLGestureLockViewController.m"
+                  timestampString = "568545729.60998"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "WPasswordProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wsq/Desktop/WSQ/WPasswordProject/WPasswordProject/Commen/setPassword/GestureLock/ZLGestureLockViewController.m"
+                  timestampString = "568545729.6116281"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

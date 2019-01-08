@@ -17,9 +17,9 @@
 		145A224721E3456D005CF1C1 /* 橙色椭圆.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A223921E3456D005CF1C1 /* 橙色椭圆.png */; };
 		145A224821E3456D005CF1C1 /* 灰色椭圆.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A223A21E3456D005CF1C1 /* 灰色椭圆.png */; };
 		145A224921E3456D005CF1C1 /* 红色椭圆.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A223B21E3456D005CF1C1 /* 红色椭圆.png */; };
-		145A224A21E3456D005CF1C1 /* ZLGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223D21E3456D005CF1C1 /* ZLGestureLockIndicator.m */; };
-		145A224B21E3456D005CF1C1 /* ZLGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223F21E3456D005CF1C1 /* ZLGestureLockView.m */; };
-		145A224C21E3456D005CF1C1 /* ZLGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A224121E3456D005CF1C1 /* ZLGestureLockViewController.m */; };
+		145A224A21E3456D005CF1C1 /* WGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223D21E3456D005CF1C1 /* WGestureLockIndicator.m */; };
+		145A224B21E3456D005CF1C1 /* WLGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223F21E3456D005CF1C1 /* WLGestureLockView.m */; };
+		145A224C21E3456D005CF1C1 /* WGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A224121E3456D005CF1C1 /* WGestureLockVC.m */; };
 		14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6921D22A9400D4F63D /* AppDelegate.m */; };
 		14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6C21D22A9400D4F63D /* ViewController.m */; };
 		14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6C6E21D22A9400D4F63D /* Main.storyboard */; };
@@ -81,12 +81,12 @@
 		145A223921E3456D005CF1C1 /* 橙色椭圆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "橙色椭圆.png"; sourceTree = "<group>"; };
 		145A223A21E3456D005CF1C1 /* 灰色椭圆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灰色椭圆.png"; sourceTree = "<group>"; };
 		145A223B21E3456D005CF1C1 /* 红色椭圆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红色椭圆.png"; sourceTree = "<group>"; };
-		145A223C21E3456D005CF1C1 /* ZLGestureLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGestureLockIndicator.h; sourceTree = "<group>"; };
-		145A223D21E3456D005CF1C1 /* ZLGestureLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGestureLockIndicator.m; sourceTree = "<group>"; };
-		145A223E21E3456D005CF1C1 /* ZLGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGestureLockView.h; sourceTree = "<group>"; };
-		145A223F21E3456D005CF1C1 /* ZLGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGestureLockView.m; sourceTree = "<group>"; };
-		145A224021E3456D005CF1C1 /* ZLGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGestureLockViewController.h; sourceTree = "<group>"; };
-		145A224121E3456D005CF1C1 /* ZLGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGestureLockViewController.m; sourceTree = "<group>"; };
+		145A223C21E3456D005CF1C1 /* WGestureLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGestureLockIndicator.h; sourceTree = "<group>"; };
+		145A223D21E3456D005CF1C1 /* WGestureLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGestureLockIndicator.m; sourceTree = "<group>"; };
+		145A223E21E3456D005CF1C1 /* WLGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLGestureLockView.h; sourceTree = "<group>"; };
+		145A223F21E3456D005CF1C1 /* WLGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLGestureLockView.m; sourceTree = "<group>"; };
+		145A224021E3456D005CF1C1 /* WGestureLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGestureLockVC.h; sourceTree = "<group>"; };
+		145A224121E3456D005CF1C1 /* WGestureLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGestureLockVC.m; sourceTree = "<group>"; };
 		14AE6C6521D22A9400D4F63D /* WPasswordProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPasswordProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE6C6821D22A9400D4F63D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14AE6C6921D22A9400D4F63D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -189,12 +189,12 @@
 			isa = PBXGroup;
 			children = (
 				145A223321E3456D005CF1C1 /* resources */,
-				145A223C21E3456D005CF1C1 /* ZLGestureLockIndicator.h */,
-				145A223D21E3456D005CF1C1 /* ZLGestureLockIndicator.m */,
-				145A223E21E3456D005CF1C1 /* ZLGestureLockView.h */,
-				145A223F21E3456D005CF1C1 /* ZLGestureLockView.m */,
-				145A224021E3456D005CF1C1 /* ZLGestureLockViewController.h */,
-				145A224121E3456D005CF1C1 /* ZLGestureLockViewController.m */,
+				145A223C21E3456D005CF1C1 /* WGestureLockIndicator.h */,
+				145A223D21E3456D005CF1C1 /* WGestureLockIndicator.m */,
+				145A223E21E3456D005CF1C1 /* WLGestureLockView.h */,
+				145A223F21E3456D005CF1C1 /* WLGestureLockView.m */,
+				145A224021E3456D005CF1C1 /* WGestureLockVC.h */,
+				145A224121E3456D005CF1C1 /* WGestureLockVC.m */,
 			);
 			path = GestureLock;
 			sourceTree = "<group>";
@@ -618,9 +618,9 @@
 				14AE6D1D21D72C2200D4F63D /* HomeViewController.m in Sources */,
 				14AE6CD321D46ABD00D4F63D /* NSString+ToolString.m in Sources */,
 				14AE6C7821D22A9600D4F63D /* main.m in Sources */,
-				145A224C21E3456D005CF1C1 /* ZLGestureLockViewController.m in Sources */,
+				145A224C21E3456D005CF1C1 /* WGestureLockVC.m in Sources */,
 				14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */,
-				145A224A21E3456D005CF1C1 /* ZLGestureLockIndicator.m in Sources */,
+				145A224A21E3456D005CF1C1 /* WGestureLockIndicator.m in Sources */,
 				14AE6CDA21D46ABD00D4F63D /* UICountingLabel.m in Sources */,
 				14AE6CD521D46ABD00D4F63D /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				14AE6D1721D5D46500D4F63D /* WSQTabBarController.m in Sources */,
@@ -628,7 +628,7 @@
 				14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */,
 				14AE6CDC21D46ABD00D4F63D /* UIImage+FixOrientation.m in Sources */,
 				14AE6CD821D46ABD00D4F63D /* UITextField+cursor.m in Sources */,
-				145A224B21E3456D005CF1C1 /* ZLGestureLockView.m in Sources */,
+				145A224B21E3456D005CF1C1 /* WLGestureLockView.m in Sources */,
 				14AE6CD221D46ABD00D4F63D /* NSArray+NullJudge.m in Sources */,
 				14AE6CDD21D46ABD00D4F63D /* UIView+Action.m in Sources */,
 				14AE6CE621D46F5300D4F63D /* NSDictionary+NullJudge.m in Sources */,

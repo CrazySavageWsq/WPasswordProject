@@ -1,22 +1,21 @@
 //
-//  ZLGestureLockViewController.m
-//  GestureLockDemo
+//  WGestureLockVC.m
+//  WPasswordProject
 //
-//  Created by ZL on 2017/4/5.
-//  Copyright © 2017年 ZL. All rights reserved.
-//
+//  Created by Crazy Wang on 2018/12/25.
+//  Copyright © 2018年 Crazy Wang. All rights reserved.
 
-#import "ZLGestureLockViewController.h"
-#import "ZLGestureLockView.h"
-#import "ZLGestureLockIndicator.h"
+#import "WGestureLockVC.h"
+#import "WLGestureLockView.h"
+#import "WGestureLockIndicator.h"
 
 #define GesturesPassword @"gesturespassword"
 
 #define SetGesturesPassword @"setGesturesPassword"
-@interface ZLGestureLockViewController () <ZLGestureLockDelegate, UIAlertViewDelegate>
+@interface WGestureLockVC () <ZLGestureLockDelegate, UIAlertViewDelegate>
 
-@property (strong, nonatomic) ZLGestureLockView *gestureLockView;
-@property (strong, nonatomic) ZLGestureLockIndicator *gestureLockIndicator;
+@property (strong, nonatomic) WLGestureLockView *gestureLockView;
+@property (strong, nonatomic) WGestureLockIndicator *gestureLockIndicator;
 
 // 手势状态栏提示label
 @property (weak, nonatomic) UILabel *statusLabel;
@@ -41,7 +40,7 @@
 @property (nonatomic) NSInteger errorCount;
 @end
 
-@implementation ZLGestureLockViewController
+@implementation WGestureLockVC
 
 #pragma mark - 类方法
 
@@ -132,7 +131,7 @@
     self.statusLabel = nameLabel;
     
     // 九宫格指示器 小图
-    ZLGestureLockIndicator *gestureLockIndicator = [[ZLGestureLockIndicator alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 60) * 0.5, 110, 60, 60)];
+    WGestureLockIndicator *gestureLockIndicator = [[WGestureLockIndicator alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 60) * 0.5, 110, 60, 60)];
     [self.view addSubview:gestureLockIndicator];
     self.gestureLockIndicator = gestureLockIndicator;
     
@@ -146,7 +145,7 @@
     self.statusLabel = statusLabel;
     
     // 九宫格 手势密码页面
-    ZLGestureLockView *gestureLockView = [[ZLGestureLockView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - self.view.frame.size.width - 60 - btnH, self.view.frame.size.width, self.view.frame.size.width)];
+    WLGestureLockView *gestureLockView = [[WLGestureLockView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - self.view.frame.size.width - 60 - btnH, self.view.frame.size.width, self.view.frame.size.width)];
     gestureLockView.delegate = self;
     [self.view addSubview:gestureLockView];
     self.gestureLockView = gestureLockView;
@@ -215,8 +214,8 @@
         
         [self dismissViewControllerAnimated:YES completion:^{
             // 保存手势密码
-            [ZLGestureLockViewController addGesturesPassword:gesturesPassword];
-            [ZLGestureLockViewController addGesturesPasswordBool:YES];
+            [WGestureLockVC addGesturesPassword:gesturesPassword];
+            [WGestureLockVC addGesturesPasswordBool:YES];
         }];
         
     }else {
@@ -232,7 +231,7 @@
     
    
     
-    if ([gesturesPassword isEqualToString:[ZLGestureLockViewController gesturesPassword]]) {
+    if ([gesturesPassword isEqualToString:[WGestureLockVC gesturesPassword]]) {
         
         [self dismissViewControllerAnimated:YES completion:^{
         }];
@@ -299,7 +298,7 @@
 
 #pragma mark - ZLgestureLockViewDelegate
 
-- (void)gestureLockView:(ZLGestureLockView *)lockView drawRectFinished:(NSMutableString *)gesturePassword {
+- (void)gestureLockView:(WLGestureLockView *)lockView drawRectFinished:(NSMutableString *)gesturePassword {
     
     switch (_unlockType) {
         case ZLUnlockTypeCreatePsw: // 创建手势密码

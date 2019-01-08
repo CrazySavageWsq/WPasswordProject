@@ -8,7 +8,7 @@
 
 #import "SetecPasswordVC.h"
 #import <LocalAuthentication/LocalAuthentication.h>
-#import "ZLGestureLockViewController.h"
+#import "WGestureLockVC.h"
 
 
 @interface SetecPasswordVC ()
@@ -42,10 +42,10 @@
             break;
             
         case 201901071:{
-            if ([ZLGestureLockViewController gesturesPassword].length > 1) {
+            if ([WGestureLockVC gesturesPassword].length > 1) {
                 
-                if ([ZLGestureLockViewController setgesturesPassword]) {
-                    ZLGestureLockViewController *vc = [[ZLGestureLockViewController alloc] initWithUnlockType:ZLUnlockTypeValidatePsw];
+                if ([WGestureLockVC setgesturesPassword]) {
+                    WGestureLockVC *vc = [[WGestureLockVC alloc] initWithUnlockType:ZLUnlockTypeValidatePsw];
                     [self presentViewController:vc animated:YES completion:nil];
                 }else{
                     NSLog(@"你已经输错了五次");
@@ -54,7 +54,7 @@
             } else {
                 
                 NSLog(@"还没设置");
-                ZLGestureLockViewController *vc = [[ZLGestureLockViewController alloc] initWithUnlockType:ZLUnlockTypeCreatePsw];
+                WGestureLockVC *vc = [[WGestureLockVC alloc] initWithUnlockType:ZLUnlockTypeCreatePsw];
                 [self presentViewController:vc animated:YES completion:nil];
             }
         }

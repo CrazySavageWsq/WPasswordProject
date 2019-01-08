@@ -1,20 +1,20 @@
 //
-//  ZLGestureLockIndicator.m
-//  GestureLockDemo
+//  WGestureLockIndicator.m
+//  WPasswordProject
 //
-//  Created by ZL on 2017/4/5.
-//  Copyright © 2017年 ZL. All rights reserved.
+//  Created by Crazy Wang on 2018/12/25.
+//  Copyright © 2018年 Crazy Wang. All rights reserved.
 //
 
-#import "ZLGestureLockIndicator.h"
+#import "WGestureLockIndicator.h"
 
-@interface ZLGestureLockIndicator()
+@interface WGestureLockIndicator()
 
 @property (nonatomic, strong) NSMutableArray *btns;
 
 @end
 
-@implementation ZLGestureLockIndicator
+@implementation WGestureLockIndicator
 
 #pragma mark - getter
 
@@ -93,5 +93,9 @@
     }
 }
 
-
+- (void)cleanPasssword{
+    for (UIButton *button in self.btns) {
+        button.selected = NO;
+    }
+}
 @end

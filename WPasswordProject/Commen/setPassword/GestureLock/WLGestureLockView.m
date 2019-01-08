@@ -1,14 +1,14 @@
 //
-//  ZLGestureLockView.m
-//  GestureLockDemo
+//  WLGestureLockView.m
+//  WPasswordProject
 //
-//  Created by ZL on 2017/4/5.
-//  Copyright © 2017年 ZL. All rights reserved.
+//  Created by Crazy Wang on 2018/12/25.
+//  Copyright © 2018年 Crazy Wang. All rights reserved.
 //
 
-#import "ZLGestureLockView.h"
+#import "WLGestureLockView.h"
 
-@interface ZLGestureLockView ()
+@interface WLGestureLockView ()
 
 @property (strong, nonatomic) NSMutableArray *selectBtns;
 @property (nonatomic, strong) NSMutableArray *errorBtns;//错误的按钮数组
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation ZLGestureLockView
+@implementation WLGestureLockView
 
 #pragma mark - getter
 
@@ -228,7 +228,7 @@
     //创建可变字符串
     NSMutableString *result = [NSMutableString string];
     for (UIButton *btn in self.selectBtns) {
-        [result appendFormat:@"%ld", btn.tag - 1];
+        [result appendFormat:@"%d", btn.tag - 1];
     }
     return result;
 }

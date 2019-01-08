@@ -1,13 +1,13 @@
 //
-//  ZLGestureLockView.h
-//  GestureLockDemo
+//  WLGestureLockView.h
+//  WPasswordProject
 //
-//  Created by ZL on 2017/4/5.
-//  Copyright © 2017年 ZL. All rights reserved.
+//  Created by Crazy Wang on 2018/12/25.
+//  Copyright © 2018年 Crazy Wang. All rights reserved.
 //  九宫格 手势密码页面
 
 #import <UIKit/UIKit.h>
-@class ZLGestureLockView;
+@class WLGestureLockView;
 
 //检测手势密码答案情况 对/错/不够4个数字
 typedef NS_ENUM(NSUInteger, ResultKindType) {
@@ -24,11 +24,11 @@ typedef NS_ENUM(NSUInteger, ResultKindType) {
 
 @protocol ZLGestureLockDelegate <NSObject>
 
-- (void)gestureLockView:(ZLGestureLockView *)lockView drawRectFinished:(NSMutableString *)gesturePassword;
+- (void)gestureLockView:(WLGestureLockView *)lockView drawRectFinished:(NSMutableString *)gesturePassword;
 
 @end
 
-@interface ZLGestureLockView : UIView
+@interface WLGestureLockView : UIView
 
 @property (assign, nonatomic) id<ZLGestureLockDelegate> delegate;
 

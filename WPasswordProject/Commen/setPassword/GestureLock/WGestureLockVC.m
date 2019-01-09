@@ -8,10 +8,11 @@
 #import "WGestureLockVC.h"
 #import "WLGestureLockView.h"
 #import "WGestureLockIndicator.h"
+#import "WSQAlertController.h"
 
 #define GesturesPassword @"gesturespassword"
 
-#define SetGesturesPassword @"setGesturesPassword"
+//#define SetGesturesPassword @"setGesturesPassword"
 @interface WGestureLockVC () <ZLGestureLockDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) WLGestureLockView *gestureLockView;
@@ -24,18 +25,14 @@
 @property (weak, nonatomic) UILabel *nameLabel;
 // 账户头像
 @property (weak, nonatomic) UIImageView *headIcon;
-
 // 其他账户登录按钮
 @property (weak, nonatomic) UIButton *otherAcountBtn;
-// 重新绘制按钮
-@property (weak, nonatomic) UIButton *resetPswBtn;
-// 忘记手势密码按钮
-@property (weak, nonatomic) UIButton *forgetPswBtn;
+
 
 // 创建的手势密码
 @property (nonatomic, copy) NSString *lastGesturePsw;
 
-@property (nonatomic) ZLUnlockType unlockType;
+@property (nonatomic) WUnlockType unlockType;
 
 @property (nonatomic) NSInteger errorCount;
 @end
@@ -58,18 +55,18 @@
     return [[NSUserDefaults standardUserDefaults] objectForKey:GesturesPassword];
 }
 
-+ (void)addGesturesPasswordBool:(BOOL)setBools{
-    [[NSUserDefaults standardUserDefaults] setBool:setBools forKey:SetGesturesPassword];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-+ (BOOL)setgesturesPassword{
-    return [[NSUserDefaults standardUserDefaults] objectForKey:SetGesturesPassword];
-
-}
+//+ (void)addGesturesPasswordBool:(BOOL)setBools{
+//    [[NSUserDefaults standardUserDefaults] setBool:setBools forKey:SetGesturesPassword];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+//}
+//+ (BOOL)setgesturesPassword{
+//    return [[NSUserDefaults standardUserDefaults] objectForKey:SetGesturesPassword];
+//
+//}
 
 #pragma mark - inint
 
-- (instancetype)initWithUnlockType:(ZLUnlockType)unlockType {
+- (instancetype)initWithUnlockType:(WUnlockType)unlockType {
     if (self = [super init]) {
         _unlockType = unlockType;
     }
@@ -86,19 +83,19 @@
     
     self.gestureLockView.delegate = self;
     
-    self.resetPswBtn.hidden = YES;
+
     switch (_unlockType) {
-        case ZLUnlockTypeCreatePsw:
+        case WUnlockTypeCreatePsw:
         {
             self.gestureLockIndicator.hidden = NO;
-            self.otherAcountBtn.hidden = self.forgetPswBtn.hidden = self.nameLabel.hidden = self.headIcon.hidden = YES;
+           self.nameLabel.hidden = self.headIcon.hidden = YES;
         }
             break;
-        case ZLUnlockTypeValidatePsw:
+        case WUnlockTypeValidatePsw:
         {
-            _errorCount = 5;
+            _errorCount = 10;
             self.gestureLockIndicator.hidden = YES;
-            self.otherAcountBtn.hidden = self.forgetPswBtn.hidden = self.nameLabel.hidden = self.headIcon.hidden = NO;
+           self.nameLabel.hidden = self.headIcon.hidden = YES;
             
         }
             break;
@@ -155,34 +152,19 @@
     UIButton *otherAcountBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     otherAcountBtn.frame = CGRectMake(maginX, self.view.frame.size.height - 20 - btnH, btnW, btnH);
     otherAcountBtn.backgroundColor = [UIColor clearColor];
-    [otherAcountBtn setTitle:@"其他解锁方式" forState:UIControlStateNormal];
+    if (_unlockType == WUnlockTypeCreatePsw) {
+        
+        [otherAcountBtn setTitle:@"重新绘制" forState:UIControlStateNormal];
+        [otherAcountBtn addTarget:self action:@selector(resetGesturePassword:) forControlEvents:UIControlEventTouchUpInside];
+    }else{
+        [otherAcountBtn setTitle:@"其他解锁方式" forState:UIControlStateNormal];
+        [otherAcountBtn addTarget:self action:@selector(otherAccountLogin:) forControlEvents:UIControlEventTouchUpInside];
+
+    }
     otherAcountBtn.titleLabel.font = [UIFont systemFontOfSize:12];
     [otherAcountBtn setTitleColor:[UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1] forState:UIControlStateNormal];
-    [otherAcountBtn addTarget:self action:@selector(otherAccountLogin:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:otherAcountBtn];
     self.otherAcountBtn = otherAcountBtn;
-    
-    // 重新绘制按钮
-    UIButton *resetPswBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    resetPswBtn.frame = CGRectMake(CGRectGetMaxX(otherAcountBtn.frame) + magin, otherAcountBtn.frame.origin.y, btnW, btnH);
-    resetPswBtn.backgroundColor = otherAcountBtn.backgroundColor;
-    [resetPswBtn setTitle:@"重新绘制" forState:UIControlStateNormal];
-    resetPswBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-    [resetPswBtn setTitleColor:[UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1] forState:UIControlStateNormal];
-    [resetPswBtn addTarget:self action:@selector(resetGesturePassword:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:resetPswBtn];
-    self.resetPswBtn = resetPswBtn;
-    
-    // 忘记手势密码按钮
-    UIButton *forgetPswBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    forgetPswBtn.frame = CGRectMake(CGRectGetMaxX(resetPswBtn.frame) + magin, otherAcountBtn.frame.origin.y, btnW, btnH);
-    forgetPswBtn.backgroundColor = otherAcountBtn.backgroundColor;
-    [forgetPswBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
-    forgetPswBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-    [forgetPswBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [forgetPswBtn addTarget:self action:@selector(forgetGesturesPassword:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:forgetPswBtn];
-    self.forgetPswBtn = forgetPswBtn;
 }
 
 #pragma mark - private
@@ -198,15 +180,10 @@
             return;
         }
         
-        if (self.resetPswBtn.hidden == YES) {
-            self.resetPswBtn.hidden = NO;
-        }
-        
         self.lastGesturePsw = gesturesPassword;
         [self.gestureLockIndicator setGesturePassword:gesturesPassword];
         self.statusLabel.text = @"请再次绘制手势密码";
-        
-        [self.gestureLockView clearLockView];
+        [self clearNineGridTrajectory];
         return;
     }
     
@@ -215,15 +192,22 @@
         [self dismissViewControllerAnimated:YES completion:^{
             // 保存手势密码
             [WGestureLockVC addGesturesPassword:gesturesPassword];
-            [WGestureLockVC addGesturesPasswordBool:YES];
+//            [WGestureLockVC addGesturesPasswordBool:YES];
         }];
         
     }else {
         self.statusLabel.text = @"与上一次绘制不一致，请重新绘制";
         [self shakeAnimationForView:self.statusLabel];
+        [self clearNineGridTrajectory];
     }
     
     
+}
+
+//清除九宫格上的轨迹
+-(void)clearNineGridTrajectory{
+    [self.gestureLockView clearLockView];
+    [self.gestureLockIndicator cleanPasssword];
 }
 
 // 验证手势密码
@@ -238,11 +222,42 @@
     } else {
         [self.gestureLockView clearLockView];
         _errorCount --;
-        if (_errorCount== 0) { // 你已经输错五次了！ 退出重新登陆！
-            NSLog(@"连续输错五次，请w忘记密码设置");
-            [self dismissViewControllerAnimated:YES completion:^{
+        
+        if (_errorCount ==1) {//最后一次机会
+              NSLog(@"您连续输错%ld次，请w忘记密码设置",_errorCount+9);
+            
+            //弹框告诉
+            [WSQAlertController wsqShowAlertControllerAlertWithTitle:@"连续输入出错10次，将清空本APP内所有数据" andDescribeMessage:@"" andAllButtonTitleStringArray:@[@"取消",@"确定"] andBackButtonClikBlock:^(NSUInteger buttonClik) {
+                switch (buttonClik) {
+                    case 0:
+                        [self dismissViewControllerAnimated:YES completion:nil];
+                        break;
+                        
+                    case 1:
+                        
+                        break;
+                        
+                    default:
+                        break;
+                }
                 
-            }];
+            } andFather:self];
+            
+        }
+        if (_errorCount== 0) { // 你已经输错五次了！ 退出重新登陆！
+            NSLog(@"连续输错%ld次，请w忘记密码设置",_errorCount+10);
+            //弹框告诉
+            [WSQAlertController wsqShowAlertControllerAlertWithTitle:@"您已连续输入出错10次，已将本APP内所有数据清空" andDescribeMessage:@"" andAllButtonTitleStringArray:@[@"确定"] andBackButtonClikBlock:^(NSUInteger buttonClik) {
+                switch (buttonClik) {
+                    case 0:
+                        [WGestureLockVC deleteGesturesPassword ];
+                        [self dismissViewControllerAnimated:YES completion:nil];
+                        break;
+                        
+                    default:
+                        break;
+                }
+            } andFather:self];
             return;
         }
         
@@ -286,7 +301,6 @@
     
     self.lastGesturePsw = nil;
     self.statusLabel.text = @"请绘制手势密码";
-    self.resetPswBtn.hidden = YES;
     [self.gestureLockIndicator setGesturePassword:@""];
 }
 
@@ -301,12 +315,12 @@
 - (void)gestureLockView:(WLGestureLockView *)lockView drawRectFinished:(NSMutableString *)gesturePassword {
     
     switch (_unlockType) {
-        case ZLUnlockTypeCreatePsw: // 创建手势密码
+        case WUnlockTypeCreatePsw: // 创建手势密码
         {
             [self createGesturesPassword:gesturePassword];
         }
             break;
-        case ZLUnlockTypeValidatePsw: // 校验手势密码
+        case WUnlockTypeValidatePsw: // 校验手势密码
         {
             [self validateGesturesPassword:gesturePassword];
         }

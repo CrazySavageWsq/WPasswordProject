@@ -44,17 +44,13 @@
         case 201901071:{
             if ([WGestureLockVC gesturesPassword].length > 1) {
                 
-                if ([WGestureLockVC setgesturesPassword]) {
-                    WGestureLockVC *vc = [[WGestureLockVC alloc] initWithUnlockType:ZLUnlockTypeValidatePsw];
+                    WGestureLockVC *vc = [[WGestureLockVC alloc] initWithUnlockType:WUnlockTypeValidatePsw];
                     [self presentViewController:vc animated:YES completion:nil];
-                }else{
-                    NSLog(@"你已经输错了五次");
-                    
-                }
+               
             } else {
                 
                 NSLog(@"还没设置");
-                WGestureLockVC *vc = [[WGestureLockVC alloc] initWithUnlockType:ZLUnlockTypeCreatePsw];
+                WGestureLockVC *vc = [[WGestureLockVC alloc] initWithUnlockType:WUnlockTypeCreatePsw];
                 [self presentViewController:vc animated:YES completion:nil];
             }
         }

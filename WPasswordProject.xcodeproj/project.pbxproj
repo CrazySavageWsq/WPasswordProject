@@ -20,6 +20,7 @@
 		145A224A21E3456D005CF1C1 /* WGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223D21E3456D005CF1C1 /* WGestureLockIndicator.m */; };
 		145A224B21E3456D005CF1C1 /* WLGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223F21E3456D005CF1C1 /* WLGestureLockView.m */; };
 		145A224C21E3456D005CF1C1 /* WGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A224121E3456D005CF1C1 /* WGestureLockVC.m */; };
+		145A224F21E433BC005CF1C1 /* WSQAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A224D21E433BC005CF1C1 /* WSQAlertController.m */; };
 		14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6921D22A9400D4F63D /* AppDelegate.m */; };
 		14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6C21D22A9400D4F63D /* ViewController.m */; };
 		14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6C6E21D22A9400D4F63D /* Main.storyboard */; };
@@ -87,6 +88,8 @@
 		145A223F21E3456D005CF1C1 /* WLGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLGestureLockView.m; sourceTree = "<group>"; };
 		145A224021E3456D005CF1C1 /* WGestureLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGestureLockVC.h; sourceTree = "<group>"; };
 		145A224121E3456D005CF1C1 /* WGestureLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGestureLockVC.m; sourceTree = "<group>"; };
+		145A224D21E433BC005CF1C1 /* WSQAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSQAlertController.m; sourceTree = "<group>"; };
+		145A224E21E433BC005CF1C1 /* WSQAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSQAlertController.h; sourceTree = "<group>"; };
 		14AE6C6521D22A9400D4F63D /* WPasswordProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPasswordProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE6C6821D22A9400D4F63D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14AE6C6921D22A9400D4F63D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -335,6 +338,8 @@
 		14AE6CB921D46A4B00D4F63D /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				145A224E21E433BC005CF1C1 /* WSQAlertController.h */,
+				145A224D21E433BC005CF1C1 /* WSQAlertController.m */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -605,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145A224F21E433BC005CF1C1 /* WSQAlertController.m in Sources */,
 				14AE6CD921D46ABD00D4F63D /* UIButton+UrlImageView.m in Sources */,
 				14AE6D1621D5D46500D4F63D /* WsqCustomNavigationVC.m in Sources */,
 				14AE6D0021D5D39D00D4F63D /* BaseViewContrroler.m in Sources */,

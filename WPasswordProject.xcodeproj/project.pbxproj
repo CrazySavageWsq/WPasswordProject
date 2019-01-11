@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1404034621E84F08001D1715 /* WNumberLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404034421E84F08001D1715 /* WNumberLockVC.m */; };
+		1404034721E84F08001D1715 /* WNumberLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1404034521E84F08001D1715 /* WNumberLockVC.xib */; };
 		145A223021E33963005CF1C1 /* SetecPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A222E21E33963005CF1C1 /* SetecPasswordVC.m */; };
 		145A223121E33963005CF1C1 /* SetecPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145A222F21E33963005CF1C1 /* SetecPasswordVC.xib */; };
 		145A224221E3456D005CF1C1 /* gesture_headIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A223421E3456D005CF1C1 /* gesture_headIcon@2x.png */; };
@@ -71,6 +73,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1404034321E84F08001D1715 /* WNumberLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNumberLockVC.h; sourceTree = "<group>"; };
+		1404034421E84F08001D1715 /* WNumberLockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNumberLockVC.m; sourceTree = "<group>"; };
+		1404034521E84F08001D1715 /* WNumberLockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WNumberLockVC.xib; sourceTree = "<group>"; };
 		145A222D21E33963005CF1C1 /* SetecPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetecPasswordVC.h; sourceTree = "<group>"; };
 		145A222E21E33963005CF1C1 /* SetecPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetecPasswordVC.m; sourceTree = "<group>"; };
 		145A222F21E33963005CF1C1 /* SetecPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetecPasswordVC.xib; sourceTree = "<group>"; };
@@ -177,9 +182,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1404034221E84DD7001D1715 /* NumberLock */ = {
+			isa = PBXGroup;
+			children = (
+				1404034321E84F08001D1715 /* WNumberLockVC.h */,
+				1404034421E84F08001D1715 /* WNumberLockVC.m */,
+				1404034521E84F08001D1715 /* WNumberLockVC.xib */,
+			);
+			path = NumberLock;
+			sourceTree = "<group>";
+		};
 		145A222C21E33927005CF1C1 /* setPassword */ = {
 			isa = PBXGroup;
 			children = (
+				1404034221E84DD7001D1715 /* NumberLock */,
 				145A223221E3456D005CF1C1 /* GestureLock */,
 				145A222D21E33963005CF1C1 /* SetecPasswordVC.h */,
 				145A222E21E33963005CF1C1 /* SetecPasswordVC.m */,
@@ -583,6 +599,7 @@
 				145A224321E3456D005CF1C1 /* gesture_indicator_normal@2x.png in Resources */,
 				14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */,
 				145A224821E3456D005CF1C1 /* 灰色椭圆.png in Resources */,
+				1404034721E84F08001D1715 /* WNumberLockVC.xib in Resources */,
 				14AE6D1321D5D46500D4F63D /* icon_back_black.png in Resources */,
 				145A224721E3456D005CF1C1 /* 橙色椭圆.png in Resources */,
 				145A224621E3456D005CF1C1 /* gesture_selected@2x.png in Resources */,
@@ -616,6 +633,7 @@
 				14AE6D0021D5D39D00D4F63D /* BaseViewContrroler.m in Sources */,
 				14AE6D1421D5D46500D4F63D /* UINavigationItem+WsqCustomItem.m in Sources */,
 				14AE6D1A21D72C1600D4F63D /* AddViewContrroler.m in Sources */,
+				1404034621E84F08001D1715 /* WNumberLockVC.m in Sources */,
 				14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */,
 				14AE6D2021D72C3A00D4F63D /* PersonalViewController.m in Sources */,
 				14AE6D1521D5D46500D4F63D /* WsqCustomBarItem.m in Sources */,

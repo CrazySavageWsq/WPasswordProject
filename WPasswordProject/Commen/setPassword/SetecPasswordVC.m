@@ -8,6 +8,7 @@
 
 #import "SetecPasswordVC.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "WNumberLockVC.h"
 #import "WGestureLockVC.h"
 
 
@@ -37,6 +38,8 @@
 - (IBAction)passwordBtnClik:(UIButton*)sender {
     switch (sender.tag) {
         case 201901070:{
+            
+            [self presentViewController:[WNumberLockVC new] animated:YES completion:nil];
             
         }
             break;

@@ -8,6 +8,7 @@
 
 #import "WNumberLockVC.h"
 #import "WSQAlertController.h"
+#import "UIView+CornerRadius.h"
 #define NumberPassword @"numberpassword"
 
 
@@ -17,8 +18,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backViewH;
 @property (weak, nonatomic) IBOutlet UIView *sureAginView;
 @property (weak, nonatomic) IBOutlet UILabel *titleL;
-
 @property (nonatomic) NSInteger errorCount;
+@property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 
 @end
 
@@ -40,13 +41,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+  _sureBtn.layer.cornerRadius = 10;
+    
     if ([self getNumPasssword] .length >1) {
         
         _backViewH.constant = _backViewH.constant /2.0;
         _sureAginView.hidden = YES;
          _titleL.text = @"密码解锁";
         _errorCount =10;
+    }else{
+        _titleL.text = @"设置解锁密码";
+
     }
     
     
@@ -76,7 +81,6 @@
             if (_errorCount==0) {
                 
                 NSLog(@"密码连续输错10次");
-                
                 [WSQAlertController wsqShowAlertControllerAlertWithTitle:@"您已连续输入出错10次，已将本APP内所有数据清空" andDescribeMessage:@"" andAllButtonTitleStringArray:@[@"确定"] andBackButtonClikBlock:^(NSUInteger buttonClik) {
                     switch (buttonClik) {
                         case 0:
@@ -110,7 +114,8 @@
                 } andFather:self];
                 
             } else{
-                NSLog(@"密码不对，请重新输入");
+                [WPromptView showPropt_center:@"密码不对，请重新输入"];
+
                 
             }
         }else{

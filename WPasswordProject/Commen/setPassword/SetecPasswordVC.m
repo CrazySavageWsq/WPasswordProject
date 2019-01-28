@@ -20,13 +20,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+   
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterasswordCorrectlyNotifition:) name:@"EnterasswordCorrectly" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/**
+ 消失解锁选择页面
+ 
+ @param no 带参通知
+ */
+-(void)enterasswordCorrectlyNotifition:(NSNotification *)no{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
 
 
 /**
@@ -84,6 +97,8 @@
         NSLog(@"支持指纹识别");
         // localizedReason: 用于设置提示语，表示为什么要使用Touch ID
         [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"请按home键指纹解锁" reply:^(BOOL success, NSError * _Nullable error) {
+            
+            
             if (success) {
                 
                 dispatch_sync(dispatch_get_main_queue(), ^{

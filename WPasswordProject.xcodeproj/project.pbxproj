@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1404034621E84F08001D1715 /* WNumberLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404034421E84F08001D1715 /* WNumberLockVC.m */; };
 		1404034721E84F08001D1715 /* WNumberLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1404034521E84F08001D1715 /* WNumberLockVC.xib */; };
+		14107CCB21FEE0C200DA3C42 /* WPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14107CCA21FEE0C100DA3C42 /* WPromptView.m */; };
 		145A223021E33963005CF1C1 /* SetecPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A222E21E33963005CF1C1 /* SetecPasswordVC.m */; };
 		145A223121E33963005CF1C1 /* SetecPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145A222F21E33963005CF1C1 /* SetecPasswordVC.xib */; };
 		145A224221E3456D005CF1C1 /* gesture_headIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A223421E3456D005CF1C1 /* gesture_headIcon@2x.png */; };
@@ -76,6 +77,9 @@
 		1404034321E84F08001D1715 /* WNumberLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNumberLockVC.h; sourceTree = "<group>"; };
 		1404034421E84F08001D1715 /* WNumberLockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNumberLockVC.m; sourceTree = "<group>"; };
 		1404034521E84F08001D1715 /* WNumberLockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WNumberLockVC.xib; sourceTree = "<group>"; };
+		14107CC921FEE0C100DA3C42 /* WPromptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPromptView.h; sourceTree = "<group>"; };
+		14107CCA21FEE0C100DA3C42 /* WPromptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPromptView.m; sourceTree = "<group>"; };
+		14107CCD21FEFA8600DA3C42 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		145A222D21E33963005CF1C1 /* SetecPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetecPasswordVC.h; sourceTree = "<group>"; };
 		145A222E21E33963005CF1C1 /* SetecPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetecPasswordVC.m; sourceTree = "<group>"; };
 		145A222F21E33963005CF1C1 /* SetecPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetecPasswordVC.xib; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 				14AE6C7621D22A9600D4F63D /* Info.plist */,
 				14AE6C7721D22A9600D4F63D /* main.m */,
 				14AE6D2121D750D400D4F63D /* PrefixHeader.pch */,
+				14107CCD21FEFA8600DA3C42 /* Header.h */,
 			);
 			path = WPasswordProject;
 			sourceTree = "<group>";
@@ -356,6 +361,8 @@
 			children = (
 				145A224E21E433BC005CF1C1 /* WSQAlertController.h */,
 				145A224D21E433BC005CF1C1 /* WSQAlertController.m */,
+				14107CC921FEE0C100DA3C42 /* WPromptView.h */,
+				14107CCA21FEE0C100DA3C42 /* WPromptView.m */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -637,6 +644,7 @@
 				14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */,
 				14AE6D2021D72C3A00D4F63D /* PersonalViewController.m in Sources */,
 				14AE6D1521D5D46500D4F63D /* WsqCustomBarItem.m in Sources */,
+				14107CCB21FEE0C200DA3C42 /* WPromptView.m in Sources */,
 				14AE6CD421D46ABD00D4F63D /* NSDictionary+Log.m in Sources */,
 				14AE6CFF21D5D39D00D4F63D /* BaseViewContrroler+PhotoPicker.m in Sources */,
 				14AE6D1D21D72C2200D4F63D /* HomeViewController.m in Sources */,
@@ -826,6 +834,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KX48S42R5Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WPasswordProject/PrefixHeader.pch";
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
@@ -836,7 +845,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -845,6 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KX48S42R5Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WPasswordProject/PrefixHeader.pch";
 				INFOPLIST_FILE = WPasswordProject/Info.plist;
@@ -855,7 +865,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wsq.WPasswordProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

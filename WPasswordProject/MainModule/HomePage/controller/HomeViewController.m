@@ -22,8 +22,12 @@
     [self setNavContentMenuTitle:@"首页"];
       navBarHairlineImageView =nil;
     
+
+    
     [self showUnlockView];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -43,5 +47,8 @@
 }
 
 
-
+- (void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

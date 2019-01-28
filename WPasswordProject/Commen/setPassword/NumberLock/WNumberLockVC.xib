@@ -108,7 +108,7 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-Cd-car">
                     <rect key="frame" x="15" y="235" width="345" height="50"/>
-                    <color key="backgroundColor" red="0.14656552989999999" green="1" blue="0.90708990479999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.77254901960784317" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="FP6-Lk-W7N"/>
                     </constraints>
@@ -119,8 +119,8 @@
                         <action selector="sureBtnClik:" destination="-1" eventType="touchUpInside" id="FVr-K3-K5h"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-ey-zaU">
-                    <rect key="frame" x="151" y="35" width="73.5" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置解锁密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-ey-zaU">
+                    <rect key="frame" x="133" y="35" width="110.5" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="t2J-pt-C4M"/>
                     </constraints>

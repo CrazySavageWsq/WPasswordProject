@@ -25,7 +25,7 @@ static WPromptView * instance = nil;
     self = [super init];
     
     if (self) {
-        self.backgroundColor =  [UIColor grayColor];
+        self.backgroundColor =  RGBP(0, 0, 0, 0.5);
         self.layer.cornerRadius = 8.0f;
         self.clipsToBounds = YES;
         _messageLabel = [[UILabel alloc]init];
@@ -82,10 +82,10 @@ static WPromptView * instance = nil;
     aler.frame = CGRectMake(0, 0, width + 40, height+20);
     label.center = aler.center;
     aler.center = CGPointMake(window.center.x, window.frame.size.height - height - 50);
-    [window bringSubviewToFront:aler];
+    [window addSubview:aler];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [UIView animateWithDuration:1.0 animations:^{
+        [UIView animateWithDuration:2.0 animations:^{
             aler.alpha = 0.0f;
         } completion:^(BOOL finished) {
             aler.hidden = YES;
@@ -102,26 +102,26 @@ static WPromptView * instance = nil;
     aler.hidden = NO;
     aler.alpha = 1.0f;
     UILabel * label = aler.messageLabel;
-    label.frame = CGRectMake(0, 0, window.frame.size.width-100, 1000);
+     label.frame = CGRectMake(0, 0, window.frame.size.width-100, 1000);
     label.text = promptString;
-    label.backgroundColor = [UIColor grayColor];
     label.layer.masksToBounds = YES;
     [label sizeToFit];
-    
+
     CGFloat width = label.frame.size.width;
     CGFloat height = label.frame.size.height;
     aler.frame = CGRectMake(0, 0, width + 40, height+20);
     label.center = aler.center;
-    aler.center = CGPointMake(window.center.x, window.center.y - height);
-    [window bringSubviewToFront:aler];
+    aler.center = CGPointMake(window.center.x, window.center.y - height/2.0);
+    [window addSubview: aler];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [UIView animateWithDuration:1.0 animations:^{
+        [UIView animateWithDuration:2.0 animations:^{
             aler.alpha = 0.0f;
         } completion:^(BOOL finished) {
             aler.hidden = YES;
         }];
     });
+    
     
 }
 

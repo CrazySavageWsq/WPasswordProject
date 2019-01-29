@@ -16,6 +16,7 @@
                 <outlet property="fristPasswordTF" destination="kOr-Jq-Rz8" id="vk3-YR-WBL"/>
                 <outlet property="lastPasswordTF" destination="EQR-bl-Q1E" id="OLz-T7-fuP"/>
                 <outlet property="sureAginView" destination="mAk-2m-azM" id="a2J-Wv-hmj"/>
+                <outlet property="sureBtn" destination="dZa-Cd-car" id="TK9-GH-Vn5"/>
                 <outlet property="titleL" destination="U2F-ey-zaU" id="wMc-PD-PNw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -116,7 +117,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="sureBtnClik:" destination="-1" eventType="touchUpInside" id="FVr-K3-K5h"/>
+                        <action selector="sureBtnClik:" destination="-1" eventType="touchUpInside" id="2ug-gX-Gcc"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置解锁密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-ey-zaU">

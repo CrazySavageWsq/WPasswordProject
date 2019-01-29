@@ -36,10 +36,9 @@
  */
 -(void)enterasswordCorrectlyNotifition:(NSNotification *)no{
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+  
     
 }
-
 
 
 /**
@@ -49,9 +48,10 @@
  
  */
 - (IBAction)passwordBtnClik:(UIButton*)sender {
+    
+
     switch (sender.tag) {
         case 201901070:{
-            
             [self presentViewController:[WNumberLockVC new] animated:YES completion:nil];
             
         }

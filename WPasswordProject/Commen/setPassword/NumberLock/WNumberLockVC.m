@@ -9,6 +9,7 @@
 #import "WNumberLockVC.h"
 #import "WSQAlertController.h"
 #import "UIView+CornerRadius.h"
+#import "HomeViewController.h"
 #define NumberPassword @"numberpassword"
 
 
@@ -41,7 +42,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  _sureBtn.layer.cornerRadius = 10;
+    
+    [_sureBtn addCornerRadiusWithcornerRadius:20.0 andborderWidth:0 andColor:nil];
     
     if ([self getNumPasssword] .length >1) {
         
@@ -69,6 +71,13 @@
 
 //确定
 - (IBAction)sureBtnClik:(UIButton *)sender {
+    
+    if (_fristPasswordTF.text.length <1) {
+        
+        [WPromptView showPropt_center:@"请输入正确密码"];
+        
+        return;
+    }
     
     [self.view endEditing:YES];
     
@@ -115,11 +124,12 @@
                 
             } else{
                 [WPromptView showPropt_center:@"密码不对，请重新输入"];
-
-                
             }
         }else{
-              [self dismissViewControllerAnimated:self completion:nil];
+            
+           
+            [self dissMissVC];
+
         }
         
         
@@ -137,5 +147,20 @@
     
 }
 
+
+//dismiss到指定页面
+- (void)dissMissVC{
+    UIViewController * presentingViewController = self.presentingViewController;
+    do {
+        if ([presentingViewController isKindOfClass:[HomeViewController class]]) {
+            break;
+        }
+        presentingViewController = presentingViewController.presentingViewController;
+        
+    } while (presentingViewController.presentingViewController);
+    
+    [presentingViewController dismissViewControllerAnimated:YES completion:nil];
+
+}
 
 @end

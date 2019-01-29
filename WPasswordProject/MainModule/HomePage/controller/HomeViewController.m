@@ -41,7 +41,6 @@
 -(void)showUnlockView{
     
     [self presentViewController:[SetecPasswordVC new] animated:YES completion:^{
-        
     }];
     
 }

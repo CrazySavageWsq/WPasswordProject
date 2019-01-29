@@ -9,6 +9,7 @@
 #import "WLGestureLockView.h"
 #import "WGestureLockIndicator.h"
 #import "WSQAlertController.h"
+#import "HomeViewController.h"
 
 #define GesturesPassword @"gesturespassword"
 
@@ -216,15 +217,13 @@
    
     
     if ([gesturesPassword isEqualToString:[WGestureLockVC gesturesPassword]]) {
-        
-        [self dismissViewControllerAnimated:YES completion:^{
-        }];
+        [self dissMissVC];
     } else {
         [self.gestureLockView clearLockView];
         _errorCount --;
         
         if (_errorCount ==1) {//最后一次机会
-              NSLog(@"您连续输错%ld次，请w忘记密码设置",_errorCount+9);
+            NSLog(@"您连续输错%d次，请w忘记密码设置",_errorCount+9);
             
             //弹框告诉
             [WSQAlertController wsqShowAlertControllerAlertWithTitle:@"连续输入出错10次，将清空本APP内所有数据" andDescribeMessage:@"" andAllButtonTitleStringArray:@[@"取消",@"确定"] andBackButtonClikBlock:^(NSUInteger buttonClik) {
@@ -245,7 +244,7 @@
             
         }
         if (_errorCount== 0) { // 你已经输错五次了！ 退出重新登陆！
-            NSLog(@"连续输错%ld次，请w忘记密码设置",_errorCount+10);
+            NSLog(@"连续输错%d次，请w忘记密码设置",_errorCount+10);
             //弹框告诉
             [WSQAlertController wsqShowAlertControllerAlertWithTitle:@"您已连续输入出错10次，已将本APP内所有数据清空" andDescribeMessage:@"" andAllButtonTitleStringArray:@[@"确定"] andBackButtonClikBlock:^(NSUInteger buttonClik) {
                 switch (buttonClik) {
@@ -261,7 +260,7 @@
             return;
         }
         
-        self.statusLabel.text = [NSString stringWithFormat:@"密码错误，还可以再输入%ld次",_errorCount];
+        self.statusLabel.text = [NSString stringWithFormat:@"密码错误，还可以再输入%ld次",(long)_errorCount];
         [self shakeAnimationForView:self.statusLabel];
     }
 }
@@ -332,6 +331,20 @@
 
 
 
+//dismiss到指定页面
+- (void)dissMissVC{
+    UIViewController * presentingViewController = self.presentingViewController;
+    do {
+        if ([presentingViewController isKindOfClass:[HomeViewController class]]) {
+            break;
+        }
+        presentingViewController = presentingViewController.presentingViewController;
+        
+    } while (presentingViewController.presentingViewController);
+    
+    [presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

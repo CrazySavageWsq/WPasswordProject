@@ -24,6 +24,10 @@
 		145A224B21E3456D005CF1C1 /* WLGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A223F21E3456D005CF1C1 /* WLGestureLockView.m */; };
 		145A224C21E3456D005CF1C1 /* WGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A224121E3456D005CF1C1 /* WGestureLockVC.m */; };
 		145A224F21E433BC005CF1C1 /* WSQAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A224D21E433BC005CF1C1 /* WSQAlertController.m */; };
+		1461D6FE2215475D004E9123 /* PersonalCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461D6FC2215475D004E9123 /* PersonalCenterCell.m */; };
+		1461D6FF2215475D004E9123 /* PersonalCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1461D6FD2215475D004E9123 /* PersonalCenterCell.xib */; };
+		1461D70122165EB2004E9123 /* AboutApp.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1461D70022165EB2004E9123 /* AboutApp.rtf */; };
+		1461D70522166101004E9123 /* PrivacyAgreementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461D70422166101004E9123 /* PrivacyAgreementVC.m */; };
 		14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6921D22A9400D4F63D /* AppDelegate.m */; };
 		14AE6C6D21D22A9400D4F63D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE6C6C21D22A9400D4F63D /* ViewController.m */; };
 		14AE6C7021D22A9400D4F63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE6C6E21D22A9400D4F63D /* Main.storyboard */; };
@@ -99,6 +103,12 @@
 		145A224121E3456D005CF1C1 /* WGestureLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGestureLockVC.m; sourceTree = "<group>"; };
 		145A224D21E433BC005CF1C1 /* WSQAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSQAlertController.m; sourceTree = "<group>"; };
 		145A224E21E433BC005CF1C1 /* WSQAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSQAlertController.h; sourceTree = "<group>"; };
+		1461D6FB2215475D004E9123 /* PersonalCenterCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalCenterCell.h; sourceTree = "<group>"; };
+		1461D6FC2215475D004E9123 /* PersonalCenterCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterCell.m; sourceTree = "<group>"; };
+		1461D6FD2215475D004E9123 /* PersonalCenterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalCenterCell.xib; sourceTree = "<group>"; };
+		1461D70022165EB2004E9123 /* AboutApp.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = AboutApp.rtf; sourceTree = "<group>"; };
+		1461D70322166101004E9123 /* PrivacyAgreementVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyAgreementVC.h; sourceTree = "<group>"; };
+		1461D70422166101004E9123 /* PrivacyAgreementVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyAgreementVC.m; sourceTree = "<group>"; };
 		14AE6C6521D22A9400D4F63D /* WPasswordProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPasswordProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE6C6821D22A9400D4F63D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14AE6C6921D22A9400D4F63D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -237,6 +247,15 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		1461D702221660E4004E9123 /* privacyAgreement */ = {
+			isa = PBXGroup;
+			children = (
+				1461D70322166101004E9123 /* PrivacyAgreementVC.h */,
+				1461D70422166101004E9123 /* PrivacyAgreementVC.m */,
+			);
+			path = privacyAgreement;
+			sourceTree = "<group>";
+		};
 		14AE6C5C21D22A9400D4F63D = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +293,7 @@
 				14AE6C7321D22A9500D4F63D /* LaunchScreen.storyboard */,
 				14AE6C7621D22A9600D4F63D /* Info.plist */,
 				14AE6C7721D22A9600D4F63D /* main.m */,
+				1461D70022165EB2004E9123 /* AboutApp.rtf */,
 				14AE6D2121D750D400D4F63D /* PrefixHeader.pch */,
 				14107CCD21FEFA8600DA3C42 /* Header.h */,
 			);
@@ -318,6 +338,7 @@
 		14AE6CB721D46A1100D4F63D /* Commen */ = {
 			isa = PBXGroup;
 			children = (
+				1461D702221660E4004E9123 /* privacyAgreement */,
 				145A222C21E33927005CF1C1 /* setPassword */,
 				14AE6CB821D46A4B00D4F63D /* category */,
 				14AE6CB921D46A4B00D4F63D /* tool */,
@@ -396,6 +417,9 @@
 		14AE6CF121D5BF6800D4F63D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				1461D6FB2215475D004E9123 /* PersonalCenterCell.h */,
+				1461D6FC2215475D004E9123 /* PersonalCenterCell.m */,
+				1461D6FD2215475D004E9123 /* PersonalCenterCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -598,8 +622,10 @@
 			files = (
 				145A223121E33963005CF1C1 /* SetecPasswordVC.xib in Resources */,
 				14AE6C7521D22A9500D4F63D /* LaunchScreen.storyboard in Resources */,
+				1461D70122165EB2004E9123 /* AboutApp.rtf in Resources */,
 				14AE6C7221D22A9500D4F63D /* Assets.xcassets in Resources */,
 				145A224521E3456D005CF1C1 /* gesture_normal@2x.png in Resources */,
+				1461D6FF2215475D004E9123 /* PersonalCenterCell.xib in Resources */,
 				145A224421E3456D005CF1C1 /* gesture_indicator_selected@2x.png in Resources */,
 				145A224221E3456D005CF1C1 /* gesture_headIcon@2x.png in Resources */,
 				145A224921E3456D005CF1C1 /* 红色椭圆.png in Resources */,
@@ -654,11 +680,13 @@
 				14AE6CE321D46CDE00D4F63D /* UIView+CornerRadius.m in Sources */,
 				145A224A21E3456D005CF1C1 /* WGestureLockIndicator.m in Sources */,
 				14AE6CDA21D46ABD00D4F63D /* UICountingLabel.m in Sources */,
+				1461D6FE2215475D004E9123 /* PersonalCenterCell.m in Sources */,
 				14AE6CD521D46ABD00D4F63D /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				14AE6D1721D5D46500D4F63D /* WSQTabBarController.m in Sources */,
 				14AE6CDB21D46ABD00D4F63D /* NSArray+Log.m in Sources */,
 				14AE6C6A21D22A9400D4F63D /* AppDelegate.m in Sources */,
 				14AE6CDC21D46ABD00D4F63D /* UIImage+FixOrientation.m in Sources */,
+				1461D70522166101004E9123 /* PrivacyAgreementVC.m in Sources */,
 				14AE6CD821D46ABD00D4F63D /* UITextField+cursor.m in Sources */,
 				145A224B21E3456D005CF1C1 /* WLGestureLockView.m in Sources */,
 				14AE6CD221D46ABD00D4F63D /* NSArray+NullJudge.m in Sources */,

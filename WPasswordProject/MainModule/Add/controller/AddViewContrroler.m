@@ -18,6 +18,7 @@
 
 
 - (void)viewDidLoad {
+     self.isHideBack =YES;
     [super viewDidLoad];
    
 //    self.navigationController.navigationBar.hidden =NO;

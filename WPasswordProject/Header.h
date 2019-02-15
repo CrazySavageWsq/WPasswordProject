@@ -8,7 +8,7 @@
 
 #ifndef Header_h
 #define Header_h
-
+#import "AppDelegate.h"
 #import "WPromptView.h"
 
 #endif /* Header_h */

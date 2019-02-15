@@ -65,7 +65,7 @@
     if (self.isHideBack) {
         self.navigationItem.hidesBackButton = YES;
     }else{
-        WsqCustomBarItem *back = [self.navigationItem itemWithImage:@"icon_back_white" andHightImage:@"icon_back_white" size:CGSizeMake(30,30) type:left];
+        WsqCustomBarItem *back = [self.navigationItem itemWithImage:@"come_back_black" andHightImage:@"come_back_black" size:CGSizeMake(30,30) type:left];
         [back addTarget:self selector:@selector(backMenuPressed) event:UIControlEventTouchUpInside];
     }
     
@@ -253,6 +253,8 @@
     self.wTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.wTableView.delegate = self;
     self.wTableView.dataSource = self;
+    
+  
 
     
 

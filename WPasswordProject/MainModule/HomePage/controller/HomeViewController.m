@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
   
+    self.isHideBack =YES;
     [super viewDidLoad];
     [self setNavContentMenuTitle:@"首页"];
       navBarHairlineImageView =nil;

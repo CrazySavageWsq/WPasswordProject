@@ -21,23 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterasswordCorrectlyNotifition:) name:@"EnterasswordCorrectly" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-/**
- 消失解锁选择页面
- 
- @param no 带参通知
- */
--(void)enterasswordCorrectlyNotifition:(NSNotification *)no{
-    
-  
-    
 }
 
 
